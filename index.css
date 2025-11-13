@@ -1,0 +1,911 @@
+:root {
+  --bg-dark: #1e2124;
+  --black: #000000;
+  --gray-dark: #424242;
+  --white: #ffffff;
+  --gray: #99999a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #111;
+  font-family: Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Arial,
+    sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header */
+header {
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.wrap {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.brandbar {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 60px;
+}
+
+.brandbar img.logo {
+  height: 23px;
+  width: auto;
+  opacity: 0.95;
+}
+
+/* HERO section */
+.hero {
+  position: relative;
+  background: #000;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+/* full render visible always */
+.hero img.hero-img {
+  width: 100%;
+  object-fit: contain;
+  object-position: top;
+}
+
+
+
+@media (min-width: 1024px) {
+  .hero img.hero-img {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+  }
+}
+
+/* soft dark gradient at the bottom */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 90%,
+    var(--bg-dark) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+  /* make sure it sits above image but below logos */
+}
+
+/* white logos uniform size */
+.hero-logos img {
+  /* height: 150px; */
+  width: 140px;
+  opacity: 0.96;
+}
+
+/* adjust spacing for tablets/mobiles */
+@media (max-width: 1024px) {
+  .hero-logos {
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+
+  .hero-logos img {
+    height: 30px;
+  }
+}
+
+/* Definer + paragraph on dark background */
+.intro {
+  background: var(--bg-dark);
+  color: var(--white);
+  padding: 64px 20px 72px;
+  text-align: center;
+  margin-top: -1px;
+}
+
+/* Dark intro block (the one with the slogan) */
+.intro {
+  background: #1e2124;
+  color: #fff;
+  padding: 56px 24px 72px;
+  /* keep the space below the paragraph */
+  border-bottom: 0;
+  /* make sure no borders show */
+  position: relative;
+}
+
+/* White section that follows ("Connecting Factories" heading) */
+.section-white {
+  background: #ffffff;
+  border-top: 0;
+  /* remove any accidental top border */
+  margin-top: -1px;
+  /* pulls it up 1px to hide the seam */
+}
+
+/* Safety net in case a sub-pixel seam still renders on some devices */
+.intro::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 1px;
+  background: #1e2124;
+  /* same as the dark section */
+  pointer-events: none;
+  display: block;
+}
+
+h1 {
+  margin: 0 0 18px;
+  font-weight: 400;
+  /* lighter, elegant like reference */
+  font-size: 36px;
+  line-height: 1.3;
+  letter-spacing: 0.2px;
+}
+
+.lede {
+  max-width: 980px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #eaeaea;
+}
+
+/* Section divider (thin black line like reference) */
+.divider {
+  height: 16px;
+  background: #000000;
+}
+
+/* Brands grid */
+section.brands {
+  background: #fff;
+  padding: 56px 24px;
+}
+
+.section-title {
+  text-align: center;
+  margin: 0 0 40px;
+  font-size: 34px;
+  font-weight: 500;
+  color: #111;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px 48px;
+}
+
+@media (max-width: 1000px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  text-align: center;
+}
+
+.card img.product {
+  width: min(320px, 90%);
+  height: auto;
+}
+
+.card h3 {
+  margin: 0 0 6px;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.card p.desc {
+  margin: 0 0 20px;
+  color: #444;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* --- Brand cards section refinement --- */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+  /* ensure all text aligns left */
+}
+
+/* Brand card container */
+.card {
+  width: 28%;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Product image */
+.card .product {
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+/* Brand name (North, Kook, Avante, etc.) */
+.card h3 {
+  font-weight: 550;
+  /* semi-bold for elegant emphasis */
+  font-size: 20px;
+  margin-bottom: 4px;
+  color: #000000;
+  text-align: left;
+}
+
+/* Short description line under brand name */
+.card .desc {
+  font-weight: 400;
+  font-size: 15px;
+  color: #424242;
+  margin: 0 0 8px 0;
+  text-align: left;
+  line-height: 1.6;
+}
+
+/* Bullet list container */
+.card .brand-bullets {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 4px;
+  text-align: left;
+}
+
+/* Bullet items */
+.card .brand-bullets li {
+  position: relative;
+  padding-left: 12px;
+  margin-bottom: 2px;
+  font-weight: 400;
+  font-size: 15px;
+  color: #424242;
+  line-height: 1.6;
+}
+
+/* Custom thin bullet design */
+.card .brand-bullets li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #99999a;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.card .product-box {
+  height: 240px;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  margin-bottom: 12px;
+}
+
+.card .product {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: left;
+}
+
+/* 4️⃣ Brand grid: 2 columns + wider cards + bigger images */
+@media (max-width: 768px) {
+  .wrap {
+    padding: 0 16px;
+    /* less side margin = more width */
+  }
+
+  .brands .wrap {
+    max-width: 100%;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 16px;
+    justify-items: start;
+    text-align: left;
+  }
+
+  .card {
+    width: auto;
+  }
+
+  .card .product-box {
+    height: 36vw;
+    /* larger, adaptive product image */
+    margin-bottom: 10px;
+  }
+
+  .card .product {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  .card .desc {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .card .brand-bullets li {
+    font-size: 14px;
+    line-height: 1.5;
+    padding-left: 10px;
+  }
+
+  .card .brand-bullets li::before {
+    font-size: 11px;
+  }
+}
+
+/* unified content frame for team + contact */
+:root {
+  --content-max: 1100px;
+  /* adjust once, both sections follow */
+  --side-gutter: 24px;
+}
+
+/* TEAM on dark */
+.team {
+  background: #1e2124;
+  /* your --bg-dark */
+  color: #fff;
+  padding: 72px 0;
+  /* vertical spacing only */
+}
+
+.team .wrap {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 0 var(--side-gutter);
+}
+
+.team h2 {
+  margin: 0 0 14px;
+  font-size: 30px;
+  font-weight: 450;
+  /* same weight you liked */
+}
+
+.team p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e9e9ea;
+}
+
+/* CONTACT on light */
+.contact {
+  background: #f5f5f6;
+  color: #111;
+  padding: 0;
+  /* handled by .wrap */
+}
+
+.contact .wrap {
+  padding-top: 56px;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  /* padding: 60px var(--side-gutter); */
+}
+
+.contact h2 {
+  margin: 0 0 10px;
+  font-size: 30px;
+  font-weight: 450;
+}
+
+.contact p {
+  margin: 0 0 22px;
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+.contact .lines {
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #111;
+}
+
+/* Footer */
+footer {
+  background: #fff;
+  color: #777;
+  text-align: center;
+  padding: 16px 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  font-size: 13px;
+}
+
+/* --- kill the hairline between the dark intro and the white brands section --- */
+
+.intro {
+  background: #1e2124 !important;
+  /* correct dark color */
+  border-bottom: 0 !important;
+  /* no borders */
+  box-shadow: none !important;
+  /* no inset shadows that look like lines */
+  padding-bottom: 72px !important;
+  /* keep the extra breathing room */
+  margin-bottom: 0 !important;
+  /* no margins that can form seams */
+}
+
+.brands {
+  background: #ffffff !important;
+  /* white section below */
+  border-top: 0 !important;
+  box-shadow: none !important;
+  margin-top: -1px !important;
+  /* hides any sub-pixel seam on some GPUs */
+}
+
+/* if an <hr> sneaked in anywhere, hide it */
+hr,
+.divider,
+.section-divider {
+  display: none !important;
+  height: 0 !important;
+  border: 0 !important;
+}
+
+/* 2️ Split the headline on mobile only */
+.intro h1 .hline {
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  .intro h1 {
+    font-size: 30px;
+    /* slightly smaller, still elegant */
+    line-height: 1.3;
+  }
+
+  .intro h1 .hline {
+    display: block;
+    /* each phrase on its own line */
+  }
+}
+
+/* ===== MOBILE & SMALL TABLET TWEAKS ===== */
+
+/* Keep all 6 brand logos in one line (mobile only) */
+@media (max-width: 768px) {
+  .hero-logos {
+    bottom: 12px;
+    padding: 0 10px;
+    gap: 10px;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    /* even spacing */
+  }
+
+  .hero-logos img {
+    height: auto;
+    width: calc((100vw - 20px - 5 * 10px) / 6);
+    /* fit all 6 logos */
+    max-width: 80px;
+    /* prevents oversizing */
+    opacity: 0.98;
+  }
+}
+
+/* Move "Group" to new line on small screens */
+.section-title .mob-break {
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .section-title .mob-break {
+    display: block;
+  }
+}
+
+
+@media (min-width: 1024px){
+  .hero-logos {
+    /* height: 100px; */
+    padding-bottom: 40px;
+  }
+}
+/* Base hero logo row */
+.hero-logos {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+  gap: 0;
+  flex-wrap: nowrap;
+  background: radial-gradient(
+    ellipse 130% 80% at 50% 120%,
+    rgba(30, 33, 36, 1) 0%,
+    rgba(30, 33, 36, 0.85) 55%,
+    rgba(30, 33, 36, 0.3) 85%,
+    rgba(30, 33, 36, 0) 100%
+  );
+  /* clip-path: ellipse(70% 100% at 50% 100%); */
+}
+
+/* Each logo sits in the same-size box */
+.hero-logos .logo-box {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  width: clamp(90px, 12.5vw, 350px);
+}
+
+/* Fit the image inside the box */
+.hero-logos .logo-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+  
+}
+
+/* —— Mobile & small tablets —— */
+@media (max-width: 768px) {
+  .hero-logos {
+    padding: 0 10px;
+    flex-wrap: nowrap;
+    padding-bottom: 10px;
+    /* keep them on ONE line */
+  }
+
+  .hero-logos .logo-box {
+    width: clamp(52px, 14.5vw, 80px);
+    /* narrower boxes on phones */
+    height: 30px;
+    /* same visual height */
+  }
+}
+
+/* Contact section refinements */
+.contact .wrap {
+  position: relative;
+  /* padding-bottom: 40px; */
+  /* tightened bottom padding */
+}
+
+
+
+
+.contact-logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: -20px; */
+  /* reduce top gap */
+  /* margin-bottom: -100px; */
+  /* pull closer to footer */
+
+  width: 100%;
+  text-align: center;
+}
+
+.contact-logo img {
+  height: 140px;
+  /* larger size for visibility */
+  width: auto;
+  opacity: 0.8;
+}
+
+/* Mobile and tablet scaling */
+@media (max-width: 900px) {
+  .contact .wrap {
+    padding-bottom: 28px;
+  }
+
+  .contact-logo img {
+    height: 100px;
+  }
+}
+
+.contact .lines {
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 0px;
+}
+
+.contact-logo {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 0px;
+}
+
+/* Headline color refinement – light gray for white backgrounds only */
+
+/* General light-gray titles (used in white background sections) */
+body h1,
+body h2,
+body h3 {
+  color: #2e2e2e;
+  /* elegant neutral gray */
+}
+
+/* Override for dark background sections – keep them white */
+.intro h1,
+.intro h2,
+.team h2 {
+  color: #ffffff !important;
+}
+
+/* Specific sections that should use lighter gray but not white */
+.section-title,
+.card h3,
+.contact h2 {
+  color: #2e2e2e;
+  /* applies to brand names and contact heading */
+}
+
+/* Keep descriptive text consistent */
+.desc,
+.brand-bullets li,
+.contact p,
+.team p {
+  color: #424242;
+}
+
+/* Keep the paragraph in the dark "team" section white */
+.team p {
+  color: #e9e9ea !important;
+}
+
+/* all hero logos already sit in .hero-logos using gap */
+.hero-logos .logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* tighten just the Darc→Karv space */
+.hero-logos .logo-box:nth-child(5) {
+  /* 5th = Darc */
+  margin-right: -30px !important;
+  /* try -8 to -14px if you need more/less */
+}
+
+/* if you only want this on mobile */
+@media (max-width: 767px) {
+  .hero-logos .logo-box:nth-child(5) {
+    margin-right: -12px !important;
+  }
+}
+
+/* if you only want this on mobile */
+@media (max-width: 767px) {
+  .hero-logos .logo-box:nth-child(3) {
+    margin-right: 8px !important;
+  }
+}
+
+/* Fix phone link color & underline (keep it clickable but elegant) */
+.contact a[href^="tel"] {
+  color: inherit;
+  /* same color as surrounding text */
+  text-decoration: none;
+  /* remove the underline */
+  font-weight: 500;
+  /* optional: make it slightly bolder */
+  cursor: pointer;
+}
+
+.contact a[href^="tel"]:hover,
+.contact a[href^="tel"]:focus {
+  color: inherit;
+  /* stay the same on hover */
+  text-decoration: none;
+}
+
+/* --- Brand lines with elegant subtle bullets --- */
+
+.card .desc,
+.card .brand-lines {
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 400;
+  color: #666666;
+  margin: 0 0 0px 0;
+}
+
+/* micro-bullets for brand lines */
+.card .brand-lines {
+  position: relative;
+  margin-top: 6px;
+}
+
+.card .brand-lines br {
+  display: block;
+  content: "";
+  margin-bottom: 4px;
+}
+
+/* create bullet effect using pseudo element before each line */
+.card .brand-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card .brand-lines::before,
+
+
+    /* each line as separate span with its own subtle bullet */
+    .card .brand-lines span {
+  position: relative;
+}
+
+/* Brand lists — subtle minimalist centered dots */
+.brand-bullets {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+.brand-bullets li {
+  position: relative;
+  margin: 6px 0;
+  padding-left: 14px;
+  /* room for dot */
+  font-size: 15px;
+  color: #6b6b6c;
+  /* same mid-gray as brand description */
+  line-height: 1.7;
+}
+
+/* Hide default browser marker completely */
+.brand-bullets li::marker {
+  content: none;
+}
+
+/* Custom small dot, centered perfectly */
+.brand-bullets li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-52%);
+  /* precise vertical alignment */
+  color: #9a9a9a;
+  /* soft neutral gray */
+  font-size: 9px;
+  /* same tiny size as your previous version */
+  line-height: 1;
+  opacity: 0.9;
+}
+
+/* --- FORCE tiny bullets for brand lists --- */
+
+ul.brand-bullets {
+  /* remove browser bullets */
+  list-style: none !important;
+  margin: 8px 0 0 !important;
+  padding: 0 !important;
+}
+
+ul.brand-bullets li {
+  position: relative !important;
+  margin: 6px 0 !important;
+  padding-left: 16px !important;
+  /* room for the dot */
+  font-size: 15px !important;
+  color: #6b6b6c !important;
+  /* mid-gray like your desc */
+  line-height: 1.7 !important;
+}
+
+/* hide any default marker no matter what */
+ul.brand-bullets li::marker {
+  content: none !important;
+}
+
+/* draw our own tiny dot (not a font glyph) so it ALWAYS shows */
+ul.brand-bullets li::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 50% !important;
+  width: 4px !important;
+  height: 4px !important;
+  border-radius: 50% !important;
+  background: #9a9a9a !important;
+  /* subtle */
+  transform: translateY(-50%) !important;
+  /* perfectly centered */
+}
+
+/* --- Subtle tiny centered dots for brand lines using <span> --- */
+
+.brand-lines span {
+  position: relative;
+  display: block;
+  /* room for the dot */
+  margin: 0px 0;
+  font-size: 15px;
+  color: #6b6b6c;
+  /* same mid-gray as description */
+  line-height: 1.4;
+}
+
+.fa-brands {
+  font-size: 30px;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+a:visited {
+  color: inherit;             
+}
+
+
+a{
+  color: inherit !important; 
+  text-decoration: none !important;
+}
+
+@media(min-width: 1500px)
+{
+  .hero{
+    height: calc(100vh - 30px) !important;
+  }
+}
+
+.contact-text{
+  font-size: 12px;
+}
