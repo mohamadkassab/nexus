@@ -1,0 +1,209 @@
+.team-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  padding: 0 1rem;
+}
+
+.team-badge {
+  display: inline-block;
+  background-color: #e0f2fe;
+  color: #0c4a6e;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.team-description {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* === MOBILE SLIDER STYLES (< 1024px) === */
+/* These styles define how each card looks when it's a slide. */
+
+.team-grid {
+  padding: 0 1rem;
+}
+
+.team-member-card {
+  position: relative;
+  width: 80%; /* Each slide takes up 80% of the screen width */
+  max-width: 350px;
+  margin-right: 16px; /* Space between slides */
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: 450px; /* Giving cards a fixed height looks better in a carousel */
+}
+
+/* Optional: Style Flickity's navigation dots for better visibility */
+.flickity-page-dots {
+  bottom: 15px;
+}
+.flickity-page-dots .dot {
+  background: #9ca3af;
+}
+
+/* === SHARED CARD STYLES (Overlay, Button, Image, Text) === */
+
+.team-member-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-member-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.25rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #f9fafb;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+.details-button {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #111827;
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.75rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  z-index: 20;
+}
+
+.minus-icon { display: none; }
+
+.team-member-card.is-active .team-member-overlay {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.team-member-card.is-active .plus-icon { display: none; }
+.team-member-card.is-active .minus-icon { display: block; }
+
+.team-member-name { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.25rem; }
+.team-member-role { color: #d1d5db; margin-bottom: 1rem; }
+.team-member-bio { font-size: 0.875rem; color: #e5e7eb; }
+
+
+/* === DESKTOP GRID STYLES (1024px AND UP) === */
+/* This media query activates only on large screens. */
+
+@media (min-width: 1024px) {
+  .team-grid {
+    /* 1. Turn the container into a grid */
+    display: grid;
+    
+    /* 2. THIS IS THE KEY: Create 4 equal-width columns */
+    grid-template-columns: repeat(4, 1fr);
+    
+    gap: 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1.5rem; /* Add some side padding for the whole grid */
+  }
+    
+  .team-member-card {
+    /* 3. Reset mobile-specific sizing */
+    width: auto;
+    margin-right: 0;
+    height: 450px; /* Maintain consistent height */
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -2px rgba(0,0,0,.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* 4. Add the desktop hover effect */
+  .team-member-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,.1), 0 8px 10px -6px rgba(0,0,0,.1);
+  }
+
+  .team-member-overlay {
+    transform: translateY(0); /* Reset mobile transform */
+  }
+
+  .team-member-card:hover .team-member-overlay {
+    opacity: 1; /* Show overlay on hover */
+  }
+  
+  /* 5. Hide the mobile-only button on desktop */
+  .details-button {
+    display: none;
+  }
+}
+
+
+
+/* Hide the button on mobile by default */
+.view-all-container {
+  display: none;
+}
+
+.view-all-button {
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #333; /* Example style */
+  color: #333;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  margin-top: 30px;
+}
+
+.view-all-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* --- DESKTOP LOGIC (min-width: 1024px recommended for 4-per-row) --- */
+@media (min-width: 1024px) {
+  
+  /* 1. Set up the grid for 4 items per row */
+  .team-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* 2. Show the button container on desktop */
+  .view-all-container {
+    display: block;
+    text-align: center;
+  }
+
+  /* 3. DEFAULT STATE: Hide items 5, 6, 7, etc. */
+  .team-member-card:nth-child(n + 5) {
+    display: none;
+  }
+
+  .team-section.is-expanded .team-member-card:nth-child(n + 5) {
+    display: block; 
+    animation: fadeIn 0.5s ease-in-out; 
+  }
+}
+
+/* Optional Fade In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

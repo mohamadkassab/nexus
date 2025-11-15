@@ -11,27 +11,62 @@
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="css/styles-en.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link href="css/team.css" media="screen" rel="stylesheet" type="text/css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Flickity CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="wrap brandbar">
-      <img src="./src/logo-n.png" alt="Nexus Kitchen Group" class="logo">
+  <!-- header -->
+  <nav>
+    <div class="navbar">
+
+      <div class="logo"><a href="#"><img class="main-logo" src="src/logo-n.png"></a></div>
+      <i class='bx bx-menu'></i>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo"><img src="src/logo-n.png" width="200px"></span>
+          <i class='bx bx-x'></i>
+        </div>
+        <ul class="links align-center">
+          <li><a href="#">About</a></li>
+          <li>
+            <a href="#" class="">Brands</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">North</a></li>
+              <li><a href="#">Kopa</a></li>
+              <li><a href="#">Avante</a></li>
+              <li><a href="#">Darc</a></li>
+              <li><a href="#">Kook</a></li>
+              <li><a href="#">Karv</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Values & Philosophy</a></li>
+          <li><a href="#">Expertise</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </div>
     </div>
-  </header>
+  </nav>
 
   <!-- HERO -->
   <section class="hero">
     <img src="./src/landing nexus 1.webp" alt="" class="hero-img">
 
-    
     <!-- White brand logos (on hero) -->
     <div class="hero-logos">
       <a href="http://northrefrigeration.com/" target="_blank">
@@ -64,7 +99,9 @@
       efficiency, and global impact.</p>
   </section>
 
-  <div class="divider"></div>
+
+  <!-- DIVIDER -->
+  <div class="empty-space light"></div>
 
   <!-- BRANDS -->
   <section class="brands">
@@ -83,22 +120,23 @@
 
             </div>
           </a>
-          <a href="http://northrefrigeration.com/" target="_blank">
+
+          <div class="card-details">
+            <a href="http://northrefrigeration.com/" target="_blank">
               <h3>NORTH</h3>
-          </a>
-       
-            <!-- <p style="    margin-block-start: 0em; font-size: 12px;">Refrigeration</p> -->
-        
-          <p class="desc">A focused manufacturer of commercial quality refrigeration for the foodservice industry.</p>
-          <p class="brand-lines">
-            <span>Undercounter Refrigeration Line</span>
-            <span>Vertical Refrigeration Line</span>
-            <span>Pizza Preparation Stations</span>
-            <span>Commercial American Series</span>
-            <span>Supermarket Line Multi-Deck &amp; Island Display Units</span>
-            <span>Blast Chillers &amp; Freezers</span>
-            <span>Retail Displays</span>
-          </p>
+            </a>
+            <p class="desc">A focused manufacturer of commercial quality refrigeration for the foodservice industry.</p>
+            <p class="brand-lines">
+              <span>Undercounter Refrigeration Line</span>
+              <span>Vertical Refrigeration Line</span>
+              <span>Pizza Preparation Stations</span>
+              <span>Commercial American Series</span>
+              <span>Supermarket Line Multi-Deck &amp; Island Display Units</span>
+              <span>Blast Chillers &amp; Freezers</span>
+              <span>Retail Displays</span>
+            </p>
+          </div>
+
         </article>
 
         <!-- KOPA -->
@@ -108,20 +146,24 @@
               <img src="./src/left-aligned/kopa left.webp" class="product" alt="Kopa product">
             </div>
           </a>
-        <a href="http://kopaoven.com/" target="_blank"><h3>KOPA</h3></a>
-          <p class="desc">Kopa specializes in charcoal ovens and grilling solutions, both standard and custom-made,
-            available in charcoal, electric and gas.</p>
-          <p class="brand-lines">
-            <span>Charcoal Ovens</span>
-            <span>Robata Grills</span>
-            <span>Parilla Grills</span>
-            <span>Hibachi &amp; Yakitori Grills</span>
-            <span>Grilline (Modular Units)</span>
-            <span>Fireplaces</span>
-            <span>Pizza Ovens</span>
-            <span>Rotisserie Units</span>
-            <span>Tandoors</span>
-          </p>
+          <div class="card-details">
+            <a href="http://kopaoven.com/" target="_blank">
+              <h3>KOPA</h3>
+            </a>
+            <p class="desc">Kopa specializes in charcoal ovens and grilling solutions, both standard and custom-made,
+              available in charcoal, electric and gas.</p>
+            <p class="brand-lines">
+              <span>Charcoal Ovens</span>
+              <span>Robata Grills</span>
+              <span>Parilla Grills</span>
+              <span>Hibachi &amp; Yakitori Grills</span>
+              <span>Grilline (Modular Units)</span>
+              <span>Fireplaces</span>
+              <span>Pizza Ovens</span>
+              <span>Rotisserie Units</span>
+              <span>Tandoors</span>
+            </p>
+          </div>
         </article>
 
         <!-- DARC -->
@@ -131,17 +173,19 @@
               <img src="./src/left-aligned/darc left.webp" class="product" alt="Darc product">
             </div>
           </a>
-          <a href="http://darcrefrigeration.com/" target="_blank">
-            <h3>DARC</h3>
-          </a>
-          <p class="desc">State-of-the-art refrigerated displays driven by design and technological innovation.</p>
-          <p class="brand-lines">
-            <span>Horizontal Displays</span>
-            <span>Vertical Displays</span>
-            <span>Bespoke Displays</span>
-            <span>Residential Wine Units</span>
-            <span>Bar Concept</span>
-          </p>
+          <div class="card-details">
+            <a href="http://darcrefrigeration.com/" target="_blank">
+              <h3>DARC</h3>
+            </a>
+            <p class="desc">State-of-the-art refrigerated displays driven by design and technological innovation.</p>
+            <p class="brand-lines">
+              <span>Horizontal Displays</span>
+              <span>Vertical Displays</span>
+              <span>Bespoke Displays</span>
+              <span>Residential Wine Units</span>
+              <span>Bar Concept</span>
+            </p>
+          </div>
         </article>
 
         <!-- AVANTE -->
@@ -151,18 +195,21 @@
               <img src="./src/left-aligned/avante left.webp" class="product" alt="Avante product">
             </div>
           </a>
-          <a href="http://avanteuae.com/" target="_blank">
-            <h3>AVANTE</h3>
-          </a>
-          <p class="desc">Avante delivers innovative ventilation, filtration, and fire protection solutions designed to
-            enhance safety and performance in professional kitchens worldwide.</p>
-          <p class="brand-lines">
-            <span>Kitchen Canopies</span>
-            <span>Ventilated Ceilings</span>
-            <span>Fire Suppression Systems</span>
-            <span>Demand-Control Ventilation</span>
-            <span>HVAC Solutions</span>
-          </p>
+          <div class="card-details">
+            <a href="http://avanteuae.com/" target="_blank">
+              <h3>AVANTE</h3>
+            </a>
+            <p class="desc">Avante delivers innovative ventilation, filtration, and fire protection solutions designed
+              to
+              enhance safety and performance in professional kitchens worldwide.</p>
+            <p class="brand-lines">
+              <span>Kitchen Canopies</span>
+              <span>Ventilated Ceilings</span>
+              <span>Fire Suppression Systems</span>
+              <span>Demand-Control Ventilation</span>
+              <span>HVAC Solutions</span>
+            </p>
+          </div>
         </article>
 
         <!-- KOOK -->
@@ -172,14 +219,17 @@
               <img src="./src/left-aligned/kook left.webp" class="product" alt="Kook product">
             </div>
           </a>
-          <a href="http://kookpro.com/" target="_blank">
-            <h3>KOOK</h3>
-          </a>
-          <p class="desc">A Slovenian manufacturer of cooking suites and bespoke fabrication with a focus on front of house spaces.</p>
-          <p class="brand-lines">
-            <span>Cooking suites</span>
-            <span>Bespoke fabrication</span>
-          </p>
+          <div class="card-details">
+            <a href="http://kookpro.com/" target="_blank">
+              <h3>KOOK</h3>
+            </a>
+            <p class="desc">A Slovenian manufacturer of cooking suites and bespoke fabrication with a focus on front of
+              house spaces.</p>
+            <p class="brand-lines">
+              <span>Cooking suites</span>
+              <span>Bespoke fabrication</span>
+            </p>
+          </div>
         </article>
 
         <!-- KARV -->
@@ -189,31 +239,641 @@
               <img src="./src/left-aligned/karv left.webp" class="product" alt="Karv product">
             </div>
           </a>
-          <a href="http://karvoutdoorliving.com/" target="_blank">
-            <h3>KARV</h3>
-          </a>
-          <p class="desc">Karv focuses on outdoor living solutions that combine craftsmanship, design, and
-            functionality.</p>
-          <p class="brand-lines">
-            <span>Outdoor Kitchen Pods</span>
-            <span>Guéridon Trolleys</span>
-            <span>Stainless Steel Counters</span>
-          </p>
+          <div class="card-details">
+            <a href="http://karvoutdoorliving.com/" target="_blank">
+              <h3>KARV</h3>
+            </a>
+            <p class="desc">Karv focuses on outdoor living solutions that combine craftsmanship, design, and
+              functionality.</p>
+            <p class="brand-lines">
+              <span>Outdoor Kitchen Pods</span>
+              <span>Guéridon Trolleys</span>
+              <span>Stainless Steel Counters</span>
+            </p>
+          </div>
         </article>
 
       </div>
     </div>
   </section>
 
-  <!-- TEAM -->
-  <section class="team">
-    <div class="wrap">
-      <h2>Expertise</h2>
-      <p>Our leadership team brings together decades of experience in professional kitchen manufacturing, project
-        execution, and operational excellence , united by a shared purpose: to engineer growth through collaboration and
-        build a global manufacturing alliance.</p>
+  <div class="content">
+
+    <!-- DIVIDER -->
+    <div class="empty-space light"></div>
+
+    <!-- ABOUT -->
+    <div class="pimcore_area_text-left-image-full-tablet pimcore_area_content ">
+      <section class="area-text-left-image">
+        <div class="image-left   dark full-tablet">
+          <div class="container">
+            <!-- desktop image -->
+            <div class="col-md-12 visible-lg col-lg-5 image-desktop-wrapper">
+              <img alt="" title="" src="images/foto%20produzione.jpg"
+                srcset="images/foto%20produzione.jpg 1x, images/foto%20produzione%402x.jpg 2x">
+            </div>
+            <!-- mobile image -->
+            <div class="col-md-12 hidden-lg image-mobile-wrapper">
+              <img alt="" title="" src="images/foto%20produzione.jpg"
+                srcset="images/foto%20produzione.jpg 1x, images/foto%20produzione%402x.jpg 2x">
+            </div>
+
+            <div class="col-md-12 col-lg-7 text-wrapper">
+
+              <h3>Nexus Kitchen Group connects manufacturers, people, and ideas.</h3>
+
+              <p>Under one roof, Nexus Kitchen Group connects manufacturers, people, and ideas. Under one roof,
+                complementary brands share experience, technology, and opportunity, so each can grow faster
+                and stronger while staying true to its craft.
+                Our model is simple: we connect factories to empower growth. We combine product ranges and
+                know-how, apply economies of scale, and keep quality at the center. We believe in being close to
+                the markets we serve, investing locally, training local teams, and building foundations that lasts.
+                This is how we create professional kitchen solutions that are reliable, beautiful, and efficient, and
+                how we turn collaboration into real progress.
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-  </section>
+
+    <!-- DIVIDER -->
+    <div class="empty-space light"></div>
+
+    <!-- VALUES & PHILOSOFY-->
+    <div class="pimcore_area_gallery-carousel pimcore_area_content ">
+      <section class="area-gallery-carousel">
+        <div id="gallery-carousel-69161a290386d" class="gallery slides">
+
+          <div class="item">
+            <div class="pimcore_area_text-image-full-width pimcore_area_content ">
+              <section class="area-text-image-full ">
+                <div class="row">
+                  <div class="container">
+
+                    <div class="col-xs-12 text-wrapper">
+                      <h2 class="section-title">
+                        Collaboration
+                      </h2>
+                      <p>
+                        We connect complementary strengths, align roadmaps, and share what works.
+                        <br>
+                        Openness accelerates progress, reduces duplication,
+                        <br>
+
+                        and lets each brand focus on what it does best while the whole system moves forward together.
+                      </p>
+                    </div>
+                    <div class="col-xs-12 image-wrapper">
+                      <picture data-alt=""
+                        data-default-src="/TNK/Home/image-thumb__62634__widget_image_after_text/Compatibilit%C3%A0%20dimensionale%203.jpg">
+                        <source
+                          srcset="images/Compatibilit%C3%A0%20dimensionale%203~-~media--b5a0de42--query.webp 1x, images/Compatibilit%C3%A0%20dimensionale%203~-~media--b5a0de42--query%402x.webp 2x"
+                          media="(max-width: 768px)" type="image/webp">
+                        <source
+                          srcset="images/Compatibilit%C3%A0%20dimensionale%203~-~media--b5a0de42--query.jpg 1x, images/Compatibilit%C3%A0%20dimensionale%203~-~media--b5a0de42--query%402x.jpg 2x"
+                          media="(max-width: 768px)" type="image/jpeg">
+                        <source
+                          srcset="images/Compatibilit%C3%A0%20dimensionale%203.webp 1x, images/Compatibilit%C3%A0%20dimensionale%203%402x.webp 2x"
+                          type="image/webp">
+                        <source
+                          srcset="images/Compatibilit%C3%A0%20dimensionale%203.jpg 1x, images/Compatibilit%C3%A0%20dimensionale%203%402x.jpg 2x"
+                          type="image/jpeg">
+                        <img alt="" title="" src="images/Compatibilit%C3%A0%20dimensionale%203.jpg">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="pimcore_area_text-image-full-width pimcore_area_content ">
+              <section class="area-text-image-full ">
+                <div class="row">
+                  <div class="container">
+                    <div class="col-xs-12 text-wrapper">
+                      <h2>Sustainability</h2>
+                      <p>
+                        We aim to reduce waste and miles, prioritize durable engineering, and build supply closer to
+                        demand.
+                        <br>
+                        Local production, efficient logistics,
+                        <br>
+                        and long-life products are the foundation for responsible growth.
+                      </p>
+
+                    </div>
+                    <div class="col-xs-12 image-wrapper">
+                      <picture data-alt=""
+                        data-default-src="/TNK/Home/image-thumb__62635__widget_image_after_text/Design%20condiviso%203.jpg">
+                        <source
+                          srcset="images/Design%20condiviso%203~-~media--b5a0de42--query.webp 1x, images/Design%20condiviso%203~-~media--b5a0de42--query%402x.webp 2x"
+                          media="(max-width: 768px)" type="image/webp">
+                        <source
+                          srcset="images/Design%20condiviso%203~-~media--b5a0de42--query.jpg 1x, images/Design%20condiviso%203~-~media--b5a0de42--query%402x.jpg 2x"
+                          media="(max-width: 768px)" type="image/jpeg">
+                        <source
+                          srcset="images/Design%20condiviso%203.webp 1x, images/Design%20condiviso%203%402x.webp 2x"
+                          type="image/webp">
+                        <source srcset="images/Design%20condiviso%203.jpg 1x, images/Design%20condiviso%203%402x.jpg 2x"
+                          type="image/jpeg">
+                        <img alt="" title="" src="images/Design%20condiviso%203.jpg">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="pimcore_area_text-image-full-width pimcore_area_content ">
+              <section class="area-text-image-full ">
+                <div class="row">
+                  <div class="container">
+                    <div class="col-xs-12 text-wrapper">
+                      <h2>Shared Knowledge</h2>
+                      <p>
+                        Expertise grows when it is transferred. We document, teach,
+                        <br>
+                        and mentor across teams and countries, so skills, standards, and improvements
+                        <br>
+                        are replicated consistently and raise the bar for everyone.
+                      </p>
+                      <!-- <span class="button"><a href="https://www.thenicekitchen.com/en/Tecnologia" type="internal">TNK
+                          technology</a></span> -->
+                    </div>
+                    <div class="col-xs-12 image-wrapper">
+                      <picture data-alt=""
+                        data-default-src="/TNK/Home/image-thumb__62636__widget_image_after_text/Tecnologia%20tablet%203.jpg">
+                        <source
+                          srcset="images/Tecnologia%20tablet%203~-~media--b5a0de42--query.webp 1x, images/Tecnologia%20tablet%203~-~media--b5a0de42--query%402x.webp 2x"
+                          media="(max-width: 768px)" type="image/webp">
+                        <source
+                          srcset="images/Tecnologia%20tablet%203~-~media--b5a0de42--query.jpg 1x, images/Tecnologia%20tablet%203~-~media--b5a0de42--query%402x.jpg 2x"
+                          media="(max-width: 768px)" type="image/jpeg">
+                        <source
+                          srcset="images/Tecnologia%20tablet%203.webp 1x, images/Tecnologia%20tablet%203%402x.webp 2x"
+                          type="image/webp">
+                        <source
+                          srcset="images/Tecnologia%20tablet%203.jpg 1x, images/Tecnologia%20tablet%203%402x.jpg 2x"
+                          type="image/jpeg">
+                        <img alt="" title="" src="images/Tecnologia%20tablet%203.jpg">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="pimcore_area_text-image-full-width pimcore_area_content ">
+              <section class="area-text-image-full ">
+                <div class="row">
+                  <div class="container">
+                    <div class="col-xs-12 text-wrapper">
+                      <h2>Craftsmanship</h2>
+                      <p>
+                        Quality is non-negotiable. From materials to assembly,
+                        <br>
+                        from testing to finish, we treat every product as a promise,
+                        <br>
+                        built to perform and designed to serve chefs and operators day after day.
+                      </p>
+                    </div>
+                    <div class="col-xs-12 image-wrapper">
+                      <picture data-alt=""
+                        data-default-src="/TNK/Home/image-thumb__62636__widget_image_after_text/Tecnologia%20tablet%203.jpg">
+                        <source
+                          srcset="images/Tecnologia%20tablet%203~-~media--b5a0de42--query.webp 1x, images/Tecnologia%20tablet%203~-~media--b5a0de42--query%402x.webp 2x"
+                          media="(max-width: 768px)" type="image/webp">
+                        <source
+                          srcset="images/Tecnologia%20tablet%203~-~media--b5a0de42--query.jpg 1x, images/Tecnologia%20tablet%203~-~media--b5a0de42--query%402x.jpg 2x"
+                          media="(max-width: 768px)" type="image/jpeg">
+                        <source
+                          srcset="images/Tecnologia%20tablet%203.webp 1x, images/Tecnologia%20tablet%203%402x.webp 2x"
+                          type="image/webp">
+                        <source
+                          srcset="images/Tecnologia%20tablet%203.jpg 1x, images/Tecnologia%20tablet%203%402x.jpg 2x"
+                          type="image/jpeg">
+                        <img alt="" title="" src="images/Tecnologia%20tablet%203.jpg">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="pimcore_area_text-image-full-width pimcore_area_content ">
+              <section class="area-text-image-full ">
+                <div class="row">
+                  <div class="container">
+                    <div class="col-xs-12 text-wrapper">
+                      <h2>Future Factories Vision</h2>
+                      <p>
+                        We plan and invest for tomorrow, modular lines, digital solutions,
+                        <br>
+                        smarter energy use, and teams trained to evolve with technology
+                        <br>
+                        The goal is infrastructure that is local, adaptive, and ready to scale.
+                      </p>
+                    </div>
+                    <div class="col-xs-12 image-wrapper">
+                      <picture data-alt=""
+                        data-default-src="/TNK/Home/image-thumb__62636__widget_image_after_text/Tecnologia%20tablet%203.jpg">
+                        <source
+                          srcset="images/Tecnologia%20tablet%203~-~media--b5a0de42--query.webp 1x, images/Tecnologia%20tablet%203~-~media--b5a0de42--query%402x.webp 2x"
+                          media="(max-width: 768px)" type="image/webp">
+                        <source
+                          srcset="images/Tecnologia%20tablet%203~-~media--b5a0de42--query.jpg 1x, images/Tecnologia%20tablet%203~-~media--b5a0de42--query%402x.jpg 2x"
+                          media="(max-width: 768px)" type="image/jpeg">
+                        <source
+                          srcset="images/Tecnologia%20tablet%203.webp 1x, images/Tecnologia%20tablet%203%402x.webp 2x"
+                          type="image/webp">
+                        <source
+                          srcset="images/Tecnologia%20tablet%203.jpg 1x, images/Tecnologia%20tablet%203%402x.jpg 2x"
+                          type="image/jpeg">
+                        <img alt="" title="" src="images/Tecnologia%20tablet%203.jpg">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- DIVIDER -->
+    <div class="empty-space light"></div>
+
+    <!-- Expertise -->
+    <section class="expertise">
+      <div class="wrap">
+        <h2>Expertise</h2>
+        <p>Our leadership team brings together decades of experience in professional kitchen manufacturing, project
+          execution, and operational excellence , united by a shared purpose: to engineer growth through collaboration
+          and
+          build a global manufacturing alliance.</p>
+      </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="empty-space light"></div>
+
+    <!-- TEAM -->
+    <div class="team-section">
+      <div class="team-header">
+        <div>
+          <h2 class="section-title">
+            OUR TEAM
+          </h2>
+          <p>Behind every brand is a team of specialists, engineers, and leaders who focus on their own
+            expertise while working side by side on shared projects. Their combined knowledge and
+            dedication turn every project into a reflection of the group’s collective excellence.
+          </p>
+        </div>
+      </div>
+
+      <!-- This is the container that will be turned into a slider on mobile -->
+      <div class="team-grid">
+        <!-- Team Member Card 1 -->
+        <div class="team-member-card">
+          <img class="team-member-image"
+            src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+            alt="Person" />
+          <div class="team-member-overlay">
+            <p class="team-member-name">Oliver Aguilerra</p>
+            <p class="team-member-role">Product Manager</p>
+            <p class="team-member-bio">Vincent Van Gogh’s most popular painting, The Starry Night.</p>
+          </div>
+          <button class="details-button">
+            <span class="plus-icon">+</span>
+            <span class="minus-icon">-</span>
+          </button>
+        </div>
+        <!-- Team Member Card 2 -->
+        <div class="team-member-card">
+          <img class="team-member-image"
+            src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+            alt="Person" />
+          <div class="team-member-overlay">
+            <p class="team-member-name">Oliver Aguilerra</p>
+            <p class="team-member-role">Product Manager</p>
+            <p class="team-member-bio">Vincent Van Gogh’s most popular painting, The Starry Night.</p>
+          </div>
+          <button class="details-button">
+            <span class="plus-icon">+</span>
+            <span class="minus-icon">-</span>
+          </button>
+        </div>
+        <!-- Team Member Card 3 -->
+        <div class="team-member-card">
+          <img class="team-member-image"
+            src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+            alt="Person" />
+          <div class="team-member-overlay">
+            <p class="team-member-name">Oliver Aguilerra</p>
+            <p class="team-member-role">Product Manager</p>
+            <p class="team-member-bio">Vincent Van Gogh’s most popular painting, The Starry Night.</p>
+          </div>
+          <button class="details-button">
+            <span class="plus-icon">+</span>
+            <span class="minus-icon">-</span>
+          </button>
+        </div>
+        <!-- Team Member Card 4 -->
+        <div class="team-member-card">
+          <img class="team-member-image"
+            src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+            alt="Person" />
+          <div class="team-member-overlay">
+            <p class="team-member-name">Oliver Aguilerra</p>
+            <p class="team-member-role">Product Manager</p>
+            <p class="team-member-bio">Vincent Van Gogh’s most popular painting, The Starry Night.</p>
+          </div>
+          <button class="details-button">
+            <span class="plus-icon">+</span>
+            <span class="minus-icon">-</span>
+          </button>
+        </div>
+        <!-- Team Member Card 5 -->
+        <div class="team-member-card">
+          <img class="team-member-image"
+            src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+            alt="Person" />
+          <div class="team-member-overlay">
+            <p class="team-member-name">Oliver Aguilerra</p>
+            <p class="team-member-role">Product Manager</p>
+            <p class="team-member-bio">Vincent Van Gogh’s most popular painting, The Starry Night.</p>
+          </div>
+          <button class="details-button">
+            <span class="plus-icon">+</span>
+            <span class="minus-icon">-</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="view-all-container">
+        <button id="toggleTeamBtn" class="view-all-button">View All</button>
+      </div>
+    </div>
+
+    <div class="pimcore_area_wysiwyg pimcore_area_content ">
+      <section class="area-wysiwyg">
+        <p style="text-align: center;"><span style="font-size:28px;">The Nice Kitchen companies</span></p>
+        <p style="text-align: center;"><strong><span style="font-size:42px;">One group. One style. One
+              kitchen</span><span style="font-size:48px;">.</span></strong></p>
+      </section>
+    </div>
+
+    <div class="pimcore_area_empty-space pimcore_area_content ">
+      <section class="empty-space light"></section>
+    </div>
+
+    <div class="pimcore_area_text-left-image-full-tablet pimcore_area_content ">
+      <section class="area-text-left-image">
+
+        <div class="image-left   light full-tablet">
+          <div class="container">
+            <!-- desktop image -->
+            <div class="col-md-12 visible-lg col-lg-5 image-desktop-wrapper">
+              <img alt="" title="" src="images/Home%20coldline_sx%20full%20tablet%20mobile.jpg"
+                srcset="images/Home%20coldline_sx%20full%20tablet%20mobile.jpg 1x, images/Home%20coldline_sx%20full%20tablet%20mobile%402x.jpg 2x">
+            </div>
+            <!-- mobile image -->
+            <div class="col-md-12 hidden-lg image-mobile-wrapper">
+              <img alt="" title="" src="images/Home%20coldline_sx%20full%20tablet%20mobile.jpg"
+                srcset="images/Home%20coldline_sx%20full%20tablet%20mobile.jpg 1x, images/Home%20coldline_sx%20full%20tablet%20mobile%402x.jpg 2x">
+            </div>
+
+            <div class="col-md-12 col-lg-7 text-wrapper">
+
+              <h3>Coldline.<br>
+                The versatile and<br>
+                unlimited refrigeration</h3>
+
+              <p>Coldline designs and manufactures refrigeration<br>
+                technologies that simplify the daily work of cooks,<br>
+                pastry chefs, bakers, pizza chefs and ice cream<br>
+                makers. Anticipating the needs of the market<br>
+                by offering innovative solutions for the conservation<br>
+                of all types of food is Coldline's daily challenge.</p>
+
+              <span class="button"><a href="https://coldline.it/en/" target="_blank"
+                  type="internal">coldline.en</a></span>
+
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="empty-space light"></section>
+
+    <div class="pimcore_area_text-left-image-full-tablet pimcore_area_content ">
+      <section class="area-text-left-image">
+        <div class="image-left   light full-tablet">
+          <div class="container">
+            <!-- desktop image -->
+            <div class="col-md-12 visible-lg col-lg-5 image-desktop-wrapper">
+              <img alt="" title="" src="images/Home%20modular_sx%20full%20tablet%20mobile.jpg"
+                srcset="images/Home%20modular_sx%20full%20tablet%20mobile.jpg 1x, images/Home%20modular_sx%20full%20tablet%20mobile%402x.jpg 2x">
+            </div>
+            <!-- mobile image -->
+            <div class="col-md-12 hidden-lg image-mobile-wrapper">
+              <img alt="" title="" src="images/Home%20modular_sx%20full%20tablet%20mobile.jpg"
+                srcset="images/Home%20modular_sx%20full%20tablet%20mobile.jpg 1x, images/Home%20modular_sx%20full%20tablet%20mobile%402x.jpg 2x">
+            </div>
+
+            <div class="col-md-12 col-lg-7 text-wrapper">
+
+              <h3>Modular.<br>
+                Cooking equipment <br>
+                for making<br>
+                extraordinary dishes</h3>
+
+              <p>Modular specializes in the design and manufacture<br>
+                of cooking systems for the professional kitchen.<br>
+                Modular, robust and reliable elements, designed to<br>
+                offer maximum performance for the timeless kitchen.</p>
+
+              <span class="button"><a href="https://modular.it/en/" target="_blank"
+                  type="internal">modular.en</a></span>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="empty-space light"></section>
+
+    <div class="pimcore_area_text-left-image-full-tablet pimcore_area_content ">
+      <section class="area-text-left-image">
+        <div class="image-left   light full-tablet">
+          <div class="container">
+            <!-- desktop image -->
+            <div class="col-md-12 visible-lg col-lg-5 image-desktop-wrapper">
+              <img alt="" title="" src="images/Home%20nevo_sx%20full%20tablet%20mobile.jpg"
+                srcset="images/Home%20nevo_sx%20full%20tablet%20mobile.jpg 1x, images/Home%20nevo_sx%20full%20tablet%20mobile%402x.jpg 2x">
+            </div>
+            <!-- mobile image -->
+            <div class="col-md-12 hidden-lg image-mobile-wrapper">
+              <img alt="" title="" src="images/Home%20nevo_sx%20full%20tablet%20mobile.jpg"
+                srcset="images/Home%20nevo_sx%20full%20tablet%20mobile.jpg 1x, images/Home%20nevo_sx%20full%20tablet%20mobile%402x.jpg 2x">
+            </div>
+
+            <div class="col-md-12 col-lg-7 text-wrapper">
+
+              <h3>Nevo.<br>
+                Performance ovens<br>
+                for successful Cook&Chill</h3>
+
+              <p>Nevo develops solutions for cooking and<br>
+                regenerating food with absolute precision.<br>
+                Ovens that are designed to work non-stop<br>
+                day and night: versatile in the production phase,<br>
+                indispensable during service, they make work<br>
+                in the kitchen more effective. </p>
+
+              <span class="button"><a href="https://nevo.it/en/" target="_blank" type="internal">nevo.en</a></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="empty-space light"></section>
+
+    <div class="pimcore_area_text-left-image-full-tablet pimcore_area_content ">
+      <section class="area-text-left-image">
+        <div class="image-left   light full-tablet">
+          <div class="container">
+            <!-- desktop image -->
+            <div class="col-md-12 visible-lg col-lg-5 image-desktop-wrapper">
+              <img alt="" title="" src="images/Img%20sx%20Tuls.png"
+                srcset="images/Img%20sx%20Tuls.png 1x, images/Img%20sx%20Tuls%402x.png 2x">
+            </div>
+            <!-- mobile image -->
+            <div class="col-md-12 hidden-lg image-mobile-wrapper">
+              <img alt="" title="" src="images/Img%20sx%20Tuls.png"
+                srcset="images/Img%20sx%20Tuls.png 1x, images/Img%20sx%20Tuls%402x.png 2x">
+            </div>
+
+            <div class="col-md-12 col-lg-7 text-wrapper">
+
+              <h3>Tuls.<br>
+                Stainless steel supply<br>
+                with a common design</h3>
+
+              <p>In compliance with the philosophy of coherence<br>
+                and design which distinguishes The Nice Kitchen,<br>
+                Tuls offers a wide range of elements in stainless steel;<br>
+                appliances for preparation and storage that make the<br>
+                kitchen an harmonious and comfortable work space<br>
+                for cooks and pastry chefs.</p>
+
+              <span class="button"><a href="https://www.thenicekitchen.com/en" target="_blank"
+                  type="internal">tuls.en</a></span>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="empty-space light"></section>
+
+    <div class="pimcore_area_text-left-image-full-tablet pimcore_area_content ">
+      <section class="area-text-left-image">
+        <div class="image-left   light full-tablet">
+          <div class="container">
+            <!-- desktop image -->
+            <div class="col-md-12 visible-lg col-lg-5 image-desktop-wrapper">
+              <img alt="" title="" src="images/Home%20linearbi_sx%20full%20tablet%20mobile.jpg"
+                srcset="images/Home%20linearbi_sx%20full%20tablet%20mobile.jpg 1x, images/Home%20linearbi_sx%20full%20tablet%20mobile%402x.jpg 2x">
+            </div>
+            <!-- mobile image -->
+            <div class="col-md-12 hidden-lg image-mobile-wrapper">
+              <img alt="" title="" src="images/Home%20linearbi_sx%20full%20tablet%20mobile.jpg"
+                srcset="images/Home%20linearbi_sx%20full%20tablet%20mobile.jpg 1x, images/Home%20linearbi_sx%20full%20tablet%20mobile%402x.jpg 2x">
+            </div>
+
+            <div class="col-md-12 col-lg-7 text-wrapper">
+
+              <h3>LinearBi.<br>
+                Systems for a quality<br>
+                food delivery service</h3>
+
+              <p>Food delivery is a growing business which has<br>
+                added to the traditional food service business.<br>
+                LinearBi technology is integrated into The Nice<br>
+                Kitchen and allows you to manage the relationship<br>
+                with the customer with full autonomy delivering<br>
+                dishes with the same fragrance as when served<br>
+                at a table.</p>
+
+              <span class="button"><a href="https://www.linearbi.com/en/" target="_blank"
+                  type="internal">linearbi.com</a></span>
+
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="empty-space light"></section>
+
+    <div class="pimcore_area_text-left-image-full-tablet pimcore_area_content ">
+      <section class="area-text-left-image">
+        <div class="image-left   light full-tablet">
+          <div class="container">
+            <!-- desktop image -->
+            <div class="col-md-12 visible-lg col-lg-5 image-desktop-wrapper">
+              <img alt="" title="" src="images/Home%20merryday_sx%20full%20tablet%20mobile.jpg"
+                srcset="images/Home%20merryday_sx%20full%20tablet%20mobile.jpg 1x, images/Home%20merryday_sx%20full%20tablet%20mobile%402x.jpg 2x">
+            </div>
+            <!-- mobile image -->
+            <div class="col-md-12 hidden-lg image-mobile-wrapper">
+              <img alt="" title="" src="images/Home%20merryday_sx%20full%20tablet%20mobile.jpg"
+                srcset="images/Home%20merryday_sx%20full%20tablet%20mobile.jpg 1x, images/Home%20merryday_sx%20full%20tablet%20mobile%402x.jpg 2x">
+            </div>
+
+            <div class="col-md-12 col-lg-7 text-wrapper">
+
+              <h3>Merryday.<br>
+                Premium ghost kitchen</h3>
+
+              <p>Merryday is the modern ghost kitchen that unites<br>
+                quality catering and home delivery. It is also a research <br>
+                laboratory where, on a daily basis, we study the effects <br>
+                that The Nice Kitchen technologies have on food and <br>
+                develop new solutions for the cooking process. <br>
+                An experience shared with our The Nice Kitchen partners.</p>
+
+              <span class="button"><a href="https://www.merryday.it/" target="_blank"
+                  type="internal">merryday.it</a></span>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="empty-space light"></section>
+
+  </div>
 
   <!-- CONTACT -->
   <section class="contact">
@@ -225,17 +885,20 @@
         <a href="mailto:info@nexuskitchengroup.com">
           <p class="contact-text">info@nexuskitchengroup.com</p>
         </a>
-        <p><a class="contact-text" href="tel:+38617888400">+386 1 788 84 00</a><br><a class="contact-text" href="https://maps.app.goo.gl/wJq1i5UDvdAgU1df9">lndustrijska cesta 5, SI-1290, Grosuplje, Slovenia</a></p>
-        <p><a class="contact-text" href="tel:+97142392882">+971 4 239 2882</a><br><a class="contact-text" href="https://maps.app.goo.gl/CYjhQkg41fW6Kd7G8">Dubai Investment Park – 2, Dubai, UAE</a></p>
+        <p><a class="contact-text" href="tel:+38617888400">+386 1 788 84 00</a><br><a class="contact-text"
+            href="https://maps.app.goo.gl/wJq1i5UDvdAgU1df9">lndustrijska cesta 5, SI-1290, Grosuplje, Slovenia</a></p>
+        <p><a class="contact-text" href="tel:+97142392882">+971 4 239 2882</a><br><a class="contact-text"
+            href="https://maps.app.goo.gl/CYjhQkg41fW6Kd7G8">Dubai Investment Park – 2, Dubai, UAE</a></p>
         <p class="contact-text">www.nexuskitchengroup.com</p>
 
-        <a href="https://www.linkedin.com/company/nexus-kitchen-group/" target="_blank" rel="noopener" style="display: flex; width: fit-content;">
+        <a href="https://www.linkedin.com/company/nexus-kitchen-group/" target="_blank" rel="noopener"
+          style="display: flex; width: fit-content;">
           <img src="src/linkedin.png" alt="LinkedIn" style="width: 30px; height: 30px; object-fit: contain;">
         </a>
 
-        <div class="contact-logo">
+        <!-- <div class="contact-logo">
           <img src="./src/icon.png" alt="Nexus Kitchen Group logo">
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -244,5 +907,96 @@
     © Nexus Kitchen Group. All rights reserved.
   </footer>
 </body>
+
+<script src="js/navbar.js"></script>
+<script src="js/team.js"></script>
+<script src="js/manifest.js"></script>
+<script src="js/shared.js"></script>
+<script src="js/app.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const carousel = document.querySelector('.team-grid');
+    let flickityInstance = null;
+
+    function updateSlider() {
+      const isMobile = window.innerWidth < 1024;
+
+      if (isMobile && !flickityInstance) {
+
+        flickityInstance = new Flickity(carousel, {
+          cellSelector: '.team-member-card',
+          cellAlign: 'center',
+          contain: true,
+          pageDots: false,
+          prevNextButtons: false,
+          wrapAround: true
+        });
+      } else if (!isMobile && flickityInstance) {
+        // If on desktop AND the slider exists, destroy it.
+        flickityInstance.destroy();
+        flickityInstance = null;
+      }
+    }
+
+    // Run the function on page load
+    updateSlider();
+
+    // Rerun the function whenever the window is resized
+    window.addEventListener('resize', updateSlider);
+  });
+</script>
+
+<script>
+  //<!--
+  $(document).ready(function ($) {
+    $('#gallery-carousel-69161a290386d').slick({
+      dots: true,
+    });
+  });
+  //-->
+</script>
+
+<script type="text/javascript">
+  //<![CDATA[
+  $(function () { $('form.formbuilder.ajax-form').formBuilderAjaxManager(); });
+  //]]>
+</script>
+
+<script type="text/javascript">
+  //<![CDATA[
+  $(function () {
+    $('form.formbuilder').formBuilderConditionalLogic();
+  });
+  //]]>
+</script>
+
+<script type="text/javascript">
+  //<![CDATA[
+  jQuery(function ($) {
+    $('.navbar-main__dropdown__search').closest('form').submit(function () {
+      var search = $('input[name="q"]', this).val().trim();
+      if ('' == search) {
+        return false;
+      }
+
+      return true;
+    });
+  });
+
+  $(function () {
+    $('form.formbuilder').formBuilderReCaptchaV3();
+  });
+  //]]>
+</script>
+
+<script type="text/javascript">
+  //<![CDATA[
+  $(function () {
+    $('.area-wysiwyg.single-post .news-content table').addClass('table').wrap('<div class="table-responsive"></div>')
+  });
+  //]]>
+</script>
 
 </html>
