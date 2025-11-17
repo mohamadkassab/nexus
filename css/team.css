@@ -165,9 +165,7 @@
   font-weight: bold;
   cursor: pointer;
   background-color: transparent;
-  border: 2px solid #333; /* Example style */
   color: #333;
-  border-radius: 4px;
   transition: all 0.3s ease;
   margin-top: 30px;
 }

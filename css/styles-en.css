@@ -12791,11 +12791,7 @@ li.dropdown.open .menu-image {
   padding-left: 0;
   margin-bottom: 20px;
 }
-@media (max-width: 767px) {
-  .footer-wrapper .footer-column ul {
-    display: none;
-  }
-}
+
 .footer-wrapper .footer-column ul li {
   padding: 5px 0;
 }

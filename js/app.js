@@ -1,1 +1,31 @@
-webpackJsonp([1],{DuR2:function(n,t){var o;o=function(){return this}();try{o=o||Function("return this")()||(0,eval)("this")}catch(n){"object"==typeof window&&(o=window)}n.exports=o},cbRa:function(n,t,o){(function(n){var t=o("7t+N");n.$=n.jQuery=t,window.addEventListener("load",function(){document.querySelectorAll("[data-video-player]").forEach(function(n){new Plyr(n)})})}).call(t,o("DuR2"))}},["cbRa"]);
+webpackJsonp(
+  [1],
+  {
+    DuR2: function (n, t) {
+      var o;
+      o = (function () {
+        return this;
+      })();
+      try {
+        o = o || Function("return this")() || (0, eval)("this");
+      } catch (n) {
+        "object" == typeof window && (o = window);
+      }
+      n.exports = o;
+    },
+    cbRa: function (n, t, o) {
+      (function (n) {
+        var t = o("7t+N");
+        (n.$ = n.jQuery = t),
+          window.addEventListener("load", function () {
+            document
+              .querySelectorAll("[data-video-player]")
+              .forEach(function (n) {
+                new Plyr(n);
+              });
+          });
+      }).call(t, o("DuR2"));
+    },
+  },
+  ["cbRa"]
+);
