@@ -13191,13 +13191,7 @@ button.button:hover span {
 .button:hover a.arrow {
   opacity: 0.8;
 }
-.button a:focus,
-button:focus {
-  outline: 0 !important;
-  color: #fff;
-  border-color: #6d6e70;
-  background-color: #6d6e70;
-}
+
 .button a:focus.solid,
 button:focus.solid {
   color: #fff;
@@ -18904,18 +18898,7 @@ h2 a.title-font-size-extra-large {
     margin-top: 40px;
   }
 }
-.image-left .text-wrapper p {
-  margin-top: 15px;
-  margin-bottom: 30px;
-  font-size: 22px;
-  line-height: 34px;
-}
-@media (max-width: 1023px) {
-  .image-left .text-wrapper p {
-    font-size: 18px;
-    line-height: 30px;
-  }
-}
+
 @media (max-width: 767px) {
   .image-left .text-wrapper {
     text-align: center;
@@ -19319,6 +19302,10 @@ h2 a.title-font-size-extra-large {
   margin-bottom: 0;
   z-index: 9;
   padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 768px) {
   .area-text-image-full .text-wrapper {
@@ -19332,7 +19319,6 @@ h2 a.title-font-size-extra-large {
 }
 .area-text-image-full .text-wrapper h2 {
   letter-spacing: 1px;
-  margin-bottom: 20px;
   margin-top: 0;
   text-align: center;
 }
@@ -19351,12 +19337,7 @@ h2 a.title-font-size-extra-large {
 .area-text-image-full .text-wrapper p {
   margin-bottom: 40px;
 }
-@media (min-width: 767px) {
-  .area-text-image-full .text-wrapper p {
-    font-size: 22px;
-    line-height: 34px;
-  }
-}
+
 @media (max-width: 767px) {
   .area-text-image-full .text-wrapper p {
     font-size: 18px;
