@@ -9,7 +9,7 @@ function initCollapsible() {
         // Click handler for the main span
         const toggleCollapsible = () => {
           // Only work on mobile (768px or less)
-          if (window.innerWidth <= 768) {
+          if (window.innerWidth <= 767) {
             item.classList.toggle('active');
           }
         };
@@ -35,7 +35,7 @@ function initCollapsible() {
       clearTimeout(resizeTimer);
       resizeTimer = setTimeout(() => {
         // Remove active class on desktop view
-        if (window.innerWidth > 768) {
+        if (window.innerWidth > 767) {
           document.querySelectorAll('.collapsible').forEach(item => {
             item.classList.remove('active');
           });
