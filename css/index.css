@@ -374,6 +374,34 @@ ul.brand-bullets li::before {
 }
 
 /* ------------------- */
+/* Team Section */
+/* ------------------- */
+.team-section {
+  color: #2e2e2e;
+  padding: 40px 0;
+}
+
+.team-section .wrapper {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 0 var(--side-gutter);
+}
+
+.team-section h2 {
+  margin: 0 0 14px;
+  font-size: 30px;
+  font-weight: 450;
+  color: #444 !important; /* Override general h2 color */
+}
+
+.team-section p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #444 !important; /* Override general p color */
+}
+
+/* ------------------- */
 /* Contact Section */
 /* ------------------- */
 .contact {
@@ -813,9 +841,9 @@ hr,
   }
 }
 
-@media(max-width: 800px){
+@media(max-width: 767px){
   .details-paragraph{
-    padding-right: 0px;
+    text-align: center;
   }
 }
 
@@ -860,5 +888,85 @@ hr,
 @media(max-width:800px){
   .right-section-div{
     align-items: center;
+  }
+}
+
+.about-title{
+  text-align: left;
+}
+
+@media(max-width: 767px)
+{
+  .about-title{
+    text-align: center;
+  }
+}
+
+@media(max-width: 800px){
+  .about-text{
+    padding-top: 40px;
+  }
+}
+
+.nexus-brands-title{
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.nexus-brands-subtitle{
+  font-size: 22px;
+  line-height: 34px;
+}
+
+@media(max-width:1200px){
+  .nexus-brands-title{
+    font-size: 30px;
+  }
+
+.nexus-brands-subtitle{
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media(max-width:767px){
+  .nexus-brands-title{
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+@media(min-width: 767px){
+  .right-section-div{
+    align-items: start;
+  }
+}
+
+.slider-title{
+  font-size: 44px;
+  line-height: 54px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: 600;
+}
+
+@media(max-width: 767px){
+  .slider-title{
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+.slider-paragraph{
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 300;
+}
+
+@media(max-width: 767px){
+  .slider-paragraph{
+    font-size: 18px;
+    line-height: 30px;
   }
 }
