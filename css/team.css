@@ -22,6 +22,9 @@
   line-height: 1.6;
 }
 
+.team-background{
+  background: var(--bg-dark);
+}
 /* === MOBILE SLIDER STYLES (< 1024px) === */
 /* These styles define how each card looks when it's a slide. */
 
