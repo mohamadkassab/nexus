@@ -91,7 +91,7 @@ nav .navbar .links li:hover .js-sub-menu{
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 .navbar .links li .sub-menu a{
-  color: #fff;
+  /* color: #fff; */
   font-size: 15px;
   font-weight: 500;
 }

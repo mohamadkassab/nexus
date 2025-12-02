@@ -665,7 +665,7 @@ hr,
 
 .component {
   display: grid;
-  grid-template-columns: 630px 3fr 1fr;
+  grid-template-columns: 3fr 3fr 1fr;
   min-height: 400px;
 }
 
@@ -746,7 +746,7 @@ hr,
   .left-section {
     grid-column: 1;
     grid-row: 3 / 6;
-    margin-top: 90px;
+    margin-top: 160px;
   }
 
   .title {
@@ -886,9 +886,6 @@ hr,
 }
 
 @media(max-width: 1200px){
-  .section-title{
-    font-size: 30px;
-  }
   .details-paragraph{
     font-size: 18px;
   }
@@ -1011,4 +1008,35 @@ hr,
 
 .footer-wrapper .footer-column ul li {
   padding: 5px 0;
+}
+
+.funnel-container {
+  width: 100%;
+  max-width: 850px; /* Adjust based on preference */
+  margin: 0 auto;
+  overflow: hidden; /* Clears floats */
+}
+
+.shape-left {
+  float: left;
+  width: 10%; 
+  height: 200px; 
+  shape-outside: polygon(0 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+
+.shape-right {
+  float: right;
+  width: 10%; 
+  height: 200px; 
+  shape-outside: polygon(100% 0, 0 100%, 100% 100%);
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+.funnel-text {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 200;
+  text-align: center;
+  margin: 0;
 }
