@@ -1012,7 +1012,7 @@ hr,
 
 .funnel-container {
   width: 100%;
-  max-width: 850px; /* Adjust based on preference */
+  max-width: 1000px; /* Adjust based on preference */
   margin: 0 auto;
   overflow: hidden; /* Clears floats */
 }
