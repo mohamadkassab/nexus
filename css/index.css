@@ -704,16 +704,22 @@ hr,
   display: grid;
   grid-template-rows: 1fr auto;
   align-content: center;
+  align-items: center;
 }
 
-@media(min-width: 1200px){
+/* @media(min-width: 1200px){
   .brand-image-wrapper img {
     object-fit: cover;
     object-position: right;
     height: 700px;
   }
-  .right-section{
-    padding-top: 160px;
+} */
+
+@media(min-width: 1200px){
+  .brand-image-wrapper img {
+    /* object-fit: cover; */
+    object-position: left;
+    width: 900px;
   }
 }
 .paragraph {

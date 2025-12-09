@@ -18925,7 +18925,6 @@ h2 a.title-font-size-extra-large {
 }
 @media (max-width: 768px) {
   .image-left .image-mobile-wrapper {
-    max-height: 450px;
     overflow-y: hidden;
   }
 }
