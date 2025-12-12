@@ -117,7 +117,7 @@ header {
   align-items: end;
   gap: 0;
   flex-wrap: nowrap;
-  background-image: url("../images/banner-behind-logos.webp");
+  background-image: url("../src/patterns.jpg");
   background-size: auto 100%;
   padding-bottom: 20px;
   padding-top: 20px;
