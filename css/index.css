@@ -123,6 +123,10 @@ header {
   padding-top: 20px;
 }
 
+.hero-logos a{
+  border: 0px;
+}
+
 @media(max-width:1200px){
   .hero-logos {
     padding-bottom: 10px;
