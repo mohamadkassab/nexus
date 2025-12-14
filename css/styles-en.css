@@ -12756,7 +12756,7 @@ li.dropdown.open .menu-image {
   right: 0;
   width: 21px;
   height: 21px;
-  background: url(../images/footer-plus-icon.png) no-repeat top;
+  background: url(../src/footer-plus-icon.png) no-repeat top;
 }
 @media (max-width: 767px) {
   .footer-wrapper .footer-column .icon-plus {
@@ -12771,7 +12771,7 @@ li.dropdown.open .menu-image {
   right: 0;
   width: 21px;
   height: 21px;
-  background: url(../images/minus-icon.png) no-repeat 50%;
+  background: url(../src/minus-icon.png) no-repeat 50%;
 }
 @media (max-width: 767px) {
   .footer-wrapper .footer-column .collapsible {
