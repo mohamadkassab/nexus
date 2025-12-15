@@ -147,7 +147,7 @@ header {
   flex-shrink: 0; 
   
   /* THE FIX: Overlap images by 1px to kill the vertical line */
-  margin-right: -1px; 
+  margin-right: -10px; 
   
   /* Optional: clearer rendering */
   display: block; 
