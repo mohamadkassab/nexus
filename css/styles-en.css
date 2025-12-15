@@ -18870,6 +18870,13 @@ h2 a.title-font-size-extra-large {
   height: 700px;
 }
 
+@media(min-width: 1200px) and (max-width: 1500px) {
+  .image-left .image-desktop-wrapper img 
+  {
+    height: 550px;
+  }
+}
+
 @media (max-width: 768px) {
   .image-left .image-desktop-wrapper img {
     height: 470px;
