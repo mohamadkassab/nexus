@@ -385,7 +385,6 @@ ul.brand-bullets li::before {
   margin: 0 0 14px;
   font-size: 30px;
   font-weight: 450;
-  color: #444 !important; /* Override general h2 color */
 }
 
 .team-section p {
