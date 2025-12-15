@@ -111,56 +111,18 @@ header {
   object-position: top;
 }
 
-/* 1. Main Wrapper */
-.hero-wrapper {
-  position: relative;
-  width: 100%;
-  padding: 20px 0;
-  overflow: hidden; /* Hides the extra images if screen is small */
-  isolation: isolate; /* Stacking context fix */
-}
-
-/* 2. The Film Strip Container */
-.hero-film-strip {
-  position: absolute;
-  top: 0;
-  left: 0; /* or 'left: 50%; transform: translateX(-50%);' to center the pattern */
-  
-  height: 100%;
-  width: 100%;
-  
-  display: flex; /* Puts images side-by-side */
-  justify-content: flex-start; /* Aligns pattern to start */
-  align-items: center;
-  
-  z-index: -1; /* Sends it behind content */
-  pointer-events: none; /* Ignore clicks */
-}
-
-/* 3. The Repeating Images */
-.hero-film-strip img {
-  /* "Contain" Logic: Fill height, auto width */
-  height: 100%;
-  width: auto; 
-  
-  /* CRITICAL: Prevents images from squishing when screen is small */
-  flex-shrink: 0; 
-  
-  /* THE FIX: Overlap images by 1px to kill the vertical line */
-  margin-right: -10px; 
-  
-  /* Optional: clearer rendering */
-  display: block; 
-}
-
-/* 4. The Logos (Content) */
 .hero-logos {
-  position: relative;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  gap: 20px;
-  z-index: 1;
+  gap: 0;
+  flex-wrap: nowrap;
+  background-image: url("../src/patterns.jpg");
+  background-size: auto 100%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 100vw;
+  background-repeat: repeat-x;
 }
 
 .hero-logos a{
