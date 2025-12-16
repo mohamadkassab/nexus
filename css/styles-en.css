@@ -19303,7 +19303,7 @@ h2 a.title-font-size-extra-large {
 }
 .area-text-image-full .container,
 .area-text-image-full .row {
-  height: 720px;
+  height: 670px;
 }
 .area-text-image-full .text-wrapper {
   margin-bottom: 0;
@@ -20474,7 +20474,7 @@ h2 a.title-font-size-extra-large {
   width: 18px;
   height: 50px;
   display: block;
-  background: url(../images/next-arrow.png) no-repeat;
+  background: url(../src/next-arrow.png) no-repeat;
 }
 @media (max-width: 767px) {
   .slick-slider .slick-next:before {
@@ -20490,7 +20490,7 @@ h2 a.title-font-size-extra-large {
   width: 18px;
   height: 50px;
   display: block;
-  background: url(../images/prev-arrow.png) no-repeat;
+  background: url(../src/prev-arrow.png) no-repeat;
 }
 @media (max-width: 767px) {
   .slick-slider .slick-prev:before {
