@@ -830,7 +830,7 @@ hr,
 
 .collaboration-paragraph{
   max-width: 900px; 
-  padding: 0 10px;
+  padding: 0 0px;
 }
 
 .details-paragraph{
@@ -1282,9 +1282,10 @@ CEO SECTION
     text-align: center;
   }
   .about-title{
+    padding-top: 20px;
      text-align: center;
   }
-  
+
   .about-image {
     /* Full width */
     width: 100%;

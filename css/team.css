@@ -133,36 +133,46 @@
     /* 1. Turn the container into a grid */
     display: grid;
     
-    /* 2. THIS IS THE KEY: Create 4 equal-width columns */
-    grid-template-columns: repeat(4, 1fr);
+    /* 2. CHANGE: Use 12 columns (LCM of 3 and 4) */
+    /* This allows us to mix 3-item rows and 4-item rows */
+    grid-template-columns: repeat(12, 1fr);
     
     gap: 1.5rem;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 1.5rem; /* Add some side padding for the whole grid */
+    padding: 0 1.5rem; 
   }
     
   .team-member-card {
+    /* 3. DEFAULT: Span 3 columns */
+    /* 12 columns / 3 span = 4 items per row (For the "rest" of the rows) */
+    grid-column: span 3;
+    
     width: auto;
     margin-right: 0;
     height: 450px; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
-  /* 4. Add the desktop hover effect */
+  /* 4. EXCEPTION: Make the first 3 items span 4 columns */
+  /* 12 columns / 4 span = 3 items per row (For the first row) */
+  .team-member-card:nth-child(-n+3) {
+    grid-column: span 4;
+  }
+
+  /* Desktop hover effects */
   .team-member-card:hover {
     box-shadow: 0 20px 25px -5px rgba(0,0,0,.1), 0 8px 10px -6px rgba(0,0,0,.1);
   }
 
   .team-member-overlay {
-    transform: translateY(0); /* Reset mobile transform */
+    transform: translateY(0);
   }
 
   .team-member-card:hover .team-member-overlay {
-    opacity: 1; /* Show overlay on hover */
+    opacity: 1;
   }
   
-  /* 5. Hide the mobile-only button on desktop */
   .details-button {
     display: none;
   }
@@ -172,19 +182,21 @@
     text-align: center;
   }
 
-  .team-member-card:nth-child(n + 5) {
+  /* 5. UPDATE: Hide items starting from the 4th one */
+  .team-member-card:nth-child(n + 4) {
     display: none;
   }
 
-  .team-section.is-expanded .team-member-card:nth-child(n + 5) {
+  /* 6. UPDATE: Show logic when expanded */
+  .team-section.is-expanded .team-member-card:nth-child(n + 4) {
     display: block; 
     animation: fadeIn 0.5s ease-in-out; 
   }
+  
   .mobile-nav-arrow {
     display: none;
   }
 }
-
 /* Optional Fade In Animation */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
