@@ -100,8 +100,8 @@
 .team-member-card.is-active .minus-icon { display: block; }
 
 .team-member-name { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.25rem; }
-.team-member-role { color: #d1d5db; margin-bottom: 1rem; }
-.team-member-bio { font-size: 0.875rem; color: #e5e7eb; }
+.team-member-role { color: #d1d5db; margin-bottom: 10px !important;}
+.team-member-bio { font-size: 18px; color: #e5e7eb; }
 
 
 /* Hide the button on mobile by default */

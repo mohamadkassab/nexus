@@ -20478,7 +20478,7 @@ h2 a.title-font-size-extra-large {
 }
 @media (max-width: 767px) {
   .slick-slider .slick-next:before {
-    display: none;
+    margin-top: 150px;
   }
 }
 .slick-slider .slick-prev {
@@ -20494,7 +20494,7 @@ h2 a.title-font-size-extra-large {
 }
 @media (max-width: 767px) {
   .slick-slider .slick-prev:before {
-    display: none;
+     margin-top: 150px;
   }
 }
 

@@ -65,20 +65,29 @@ const teamData = [
     name: "Hassan Anouti",
     role: "CEO",
     image: "src/teams/hassan.png",
-    bio: `With a Master’s from Paris-Sorbonne and a BBA from Northwood University (Swiss Campus), 
+    bio: `
+    With a Master’s from Paris-Sorbonne and a BBA from Northwood University (Swiss Campus), 
     Hassan brings more than 15 years of industry experience across hospitality, hotels, and F&B 
-    development. He is known for his structured approach, clear decision-making, and ability to turn 
-    complex ideas into operationally strong concepts that scale, bringing a structured, analytical, 
-    and results-driven mindset to every project.` 
+    development. 
+    <div class="bio-divider"> </div>
+    <p>
+      He is known for his structured approach, clear decision-making, and ability to turn 
+      complex ideas into operationally strong concepts that scale, bringing a structured, analytical, 
+      and results-driven mindset to every project.
+    </p>
+    ` 
   },
   {
     name: "Girish Rao",
-    role: "Managing Partner <br> IMEA",
+    role: "Partner <br> IMEA",
     image: "src/teams/girish.png",
     bio: `With over 25 years of experience in HVAC and commercial kitchen ventilation, Girish leads the 
-    delivery of innovative, sustainable, and high-performance solutions across the IMEA region. He 
-    oversees complex projects for hotels, restaurants, cloud kitchens, and industrial food facilities, 
-    combining technical depth with strategic leadership.`  
+    delivery of innovative, sustainable, and high-performance solutions across the IMEA region. 
+    <div class="bio-divider"> </div>
+    <p>
+      He oversees complex projects for hotels, restaurants, cloud kitchens, and industrial food facilities, 
+      combining technical depth with strategic leadership.
+    </p>`  
   },
   {
     name: "Miran Štirn",
@@ -86,62 +95,98 @@ const teamData = [
     image: "src/teams/miran.png",
     bio: `With a Bachelor’s degree in Mechanical Engineering and nearly 30 years of experience in the 
     catering equipment industry, Miran is a serial entrepreneur with deep expertise in kitchen 
-    innovation. He previously served as Owner and CEO of a modular kitchen manufacturing 
-    company and founded Kopa Grilling Solutions and Kook Show Kitchen, focusing on advanced 
-    grilling and front-of-house cooking concepts.`  
+    innovation. 
+    <div class="bio-divider"> </div>
+    <p>
+      He previously served as Owner and CEO of a modular kitchen manufacturing 
+      company and founded Kopa Grilling Solutions and Kook Show Kitchen, focusing on advanced 
+      grilling and front-of-house cooking concepts.
+    </p>`  
   },
   {
     name: "Paul Richards",
     role: "Technical Director",
     image: "src/teams/paul.png",
-    bio: `Paul brings more than 35 years of experience in the Middle East across commercial HVAC and 
-    kitchen ventilation systems. Known for his hands-on approach, he ensures energy-efficient, 
+    bio: `
+    Paul brings more than 35 years of experience in the Middle East across commercial HVAC and 
+    kitchen ventilation systems. 
+    <div class="bio-divider"> </div>
+    <p>
+    Known for his hands-on approach, he ensures energy-efficient, 
     compliant, and high-performance solutions, supporting the successful execution of large-scale 
-    hospitality and infrastructure projects.`
+    hospitality and infrastructure projects.
+    </p>
+    `
   },
   {
     name: "Jayadev Kalliat",
     role: "Director of Operations",
     image: "src/teams/jayadev.png",
-    bio: `With a background in mechanical engineering and over 17 years of experience across the GCC, 
-    Jayadev specializes in commercial refrigeration and kitchen equipment manufacturing. He 
-    oversees technical management, strategic sourcing and procurement, and end-to-end project 
-    delivery for high-end hospitality, retail, and residential developments.`
+    bio: `
+    With a background in mechanical engineering and over 17 years of experience across the GCC, 
+    Jayadev specializes in commercial refrigeration and kitchen equipment manufacturing. 
+    <div class="bio-divider"> </div>
+    <p>
+    He oversees technical management, strategic sourcing and procurement, and end-to-end project 
+    delivery for high-end hospitality, retail, and residential developments.
+    </p>
+    `
   },
   {
-    name: "Ivan",
+    name: "Ivan Garbas",
     role: "Production Director",
     image: "src/teams/ivan.png",
     bio: `A mechanical engineer with 27 years of experience, Ivan began his career in a leading Slovenian 
-    modular kitchen manufacturer, later becoming Head of R&D. An independent entrepreneur since 
+    modular kitchen manufacturer, later becoming Head of R&D. 
+           <div class="bio-divider"> </div>
+    <p>
+    An independent entrepreneur since 
     2000, he combines hands-on technical expertise with leadership in sheet metal production and 
-    product development.`
+    product development.
+       </p>
+    `
   },
   {
     name: "Branislav Vorgic",
     role: "Director of Technology",
     image: "src/teams/branislav.png",
     bio: `With 20 years of experience in commercial kitchen equipment production and R&D, Branislav is a 
-    seasoned expert in product development and manufacturing optimization. He plays a key role in 
+    seasoned expert in product development and manufacturing optimization. 
+       <div class="bio-divider"> </div>
+    <p>
+    He plays a key role in 
     driving innovation, improving production efficiency, and enhancing equipment quality across the 
-    group’s portfolio.`
+    group’s portfolio.
+        </p>
+    `
   },
   {
     name: "Filippo Maria Genovesi",
     role: "Commercial Director",
     image: "src/teams/filippo.png",
-    bio: `With over a decade of specialized experience in the GCC, Filippo combines strong commercial 
-    leadership with technical expertise in front-of-house display solutions. As Commercial Director, 
+    bio: `
+    With over a decade of specialized experience in the GCC, Filippo combines strong commercial 
+    leadership with technical expertise in front-of-house display solutions. 
+    <div class="bio-divider"> </div>
+    <p>
+    As Commercial Director, 
     he drives growth strategy, builds long-term partnerships, and leads sales initiatives across 
-    complex hospitality and foodservice projects.`
+    complex hospitality and foodservice projects.
+    </p>
+    `
   },
   {
     name: "Hasnae El Horma",
     role: "Supply Chain Manager",
     image: "src/teams/hasnae.png",
     bio: `With several years of experience in the professional kitchen equipment industry, Hasnae plays a 
-    key role across supply chain coordination and internal operations. She supports multiple 
-    departments and ensures continuity, efficiency, and reliability across daily business activities.`
+    key role across supply chain coordination and internal operations. 
+               <div class="bio-divider"> </div>
+    <p>
+    She supports multiple 
+    departments and ensures continuity, efficiency, and reliability across daily business activities.
+     </p>
+    `
   },
   {
     name: "Darko Josimov",
@@ -156,18 +201,27 @@ const teamData = [
     role: "Brand Manager",
     image: "src/teams/beatrice.png",
     bio: `With over ten years of experience across leading industry brands, Beatrice has developed a 
-    strong foundation in business development with a focus on the Middle Eastern market. Driven 
+    strong foundation in business development with a focus on the Middle Eastern market. 
+           <div class="bio-divider"> </div>
+    <p>
+    Driven 
     and analytical, she leads brand growth initiatives, aligning commercial strategy with operational 
-    execution.`
+    execution.
+    </p>`
   },
   {
     name: "Jihane El Fady",
     role: "Brand Manager",
     image: "src/teams/jihane.png",
     bio: `With six years of regional experience, Jihane leads business development initiatives in advanced 
-    kitchen and ventilation systems across the GCC. Her strategic insight, strong industry 
+    kitchen and ventilation systems across the GCC. 
+           <div class="bio-divider"> </div>
+    <p>
+    Her strategic insight, strong industry 
     relationships, and involvement in high-profile hospitality projects contribute to sustained brand 
-    growth and market presence.`
+    growth and market presence.
+    </p>
+    `
   },
   {
     name: "Katerina Moroz",
@@ -182,24 +236,39 @@ const teamData = [
     role: "Brand Manager",
     image: "src/teams/ali.png",
     bio: `Holding an MBA from the American University, Ali brings five years of experience across sales, 
-    procurement, and production operations. He supports the group through effective business 
-    development, process optimization, and strong client relationship management.`
+    procurement, and production operations. 
+               <div class="bio-divider"> </div>
+    <p>
+    He supports the group through effective business 
+    development, process optimization, and strong client relationship management.
+     </p>
+    `
   },
   {
     name: "Joelle Osta",
     role: "Marketing Manager",
     image: "src/teams/joelle.png",
     bio: `With over a decade of experience in graphic design and marketing, Joelle combines creative 
-    vision with strategic thinking. With more than three years in the commercial kitchen industry, she 
-    leads brand strategy, visual communication, and marketing initiatives across the group.`
+    vision with strategic thinking. 
+               <div class="bio-divider"> </div>
+    <p>
+    With more than three years in the commercial kitchen industry, she 
+    leads brand strategy, visual communication, and marketing initiatives across the group.
+        </p>
+    `
   },
   {
     name: "Aymen Chemli",
     role: "Design Manager",
     image: "src/teams/aymen.png",
     bio: `A graduate of the University of Art and Design in Tunisia, Aymen brings 23 years of experience 
-    across interior design, product design, and kitchen manufacturing. His expertise bridges creative 
-    vision with technical execution, delivering production-ready, high-quality F&B design solutions.`
+    across interior design, product design, and kitchen manufacturing. 
+               <div class="bio-divider"> </div>
+    <p>
+    His expertise bridges creative 
+    vision with technical execution, delivering production-ready, high-quality F&B design solutions.
+     </p>
+    `
   },
   {
     name: "Nirupama Rao",
@@ -222,25 +291,40 @@ const teamData = [
     role: "Commercial Support Manager",
     image: "src/teams/jasmin.png",
     bio: `As a detail-driven commercial support professional, Jasmin strengthens documentation, 
-    reporting discipline, and workflow efficiency. She supports sales and project teams by 
+    reporting discipline, and workflow efficiency. 
+               <div class="bio-divider"> </div>
+    <p>
+    She supports sales and project teams by 
     maintaining strong client relationships, improving data accuracy, and ensuring smooth revenue 
-    operations.`
+    operations.
+     </p>
+    `
   },
   {
     name: "Khasim Hussain",
     role: "Technical Manager",
     image: "src/teams/khasim.png",
     bio: `With 12 years of experience in the manufacturing industry, Khasim specializes in front-of-house 
-    kitchen solutions, bar design, and project coordination. His leadership ensures functional, 
-    innovative designs that enhance customer experience and operational efficiency.`
+    kitchen solutions, bar design, and project coordination. 
+               <div class="bio-divider"> </div>
+    <p>
+    His leadership ensures functional, 
+    innovative designs that enhance customer experience and operational efficiency.
+    </p>
+    `
   },
   {
     name: "Perly Massaad",
     role: "Digital Marketing Executive",
     image: "src/teams/perly.png",
     bio: `With over ten years of experience in graphic design and marketing, Perly manages digital content 
-    and social media initiatives. Her work enhances brand visibility, engagement, and creative 
-    consistency across platforms and campaigns.`
+    and social media initiatives. 
+                   <div class="bio-divider"> </div>
+    <p>
+    Her work enhances brand visibility, engagement, and creative 
+    consistency across platforms and campaigns.
+      </p>
+    `
   },
   {
     name: "Tawfiq Suleiman",
@@ -255,17 +339,27 @@ const teamData = [
     role: "R&D Executive",
     image: "src/teams/ganesh.png",
     bio: `With over 14 years of experience in commercial kitchen equipment fabrication, Ganesh 
-    specializes in product research, development, and optimization. Proficient in advanced 3D CAD 
-    tools, he supports innovation-driven, high-performance product solutions.`
+    specializes in product research, development, and optimization. 
+                   <div class="bio-divider"> </div>
+    <p>
+    Proficient in advanced 3D CAD 
+    tools, he supports innovation-driven, high-performance product solutions.
+    </p>
+    `
   },
   {
     name: "Clara Dagher",
     role: "Product Engineer",
     image: "src/teams/clara.png",
     bio: `With a background in industrial engineering, Clara brings strong technical expertise to her role as 
-    Product Engineer. She supports operations through accurate cost analysis, project evaluation, 
+    Product Engineer. 
+               <div class="bio-divider"> </div>
+    <p>
+    She supports operations through accurate cost analysis, project evaluation, 
     and solution development, contributing to operational efficiency and informed decision-making 
-    across projects.`
+    across projects.
+        </p>
+    `
   },
   {
     name: "Francis Prable",
@@ -292,7 +386,7 @@ const teamData = [
     insights that strengthen profitability, cash flow, and strategic decision-making.`
   },
   {
-    name: "Matej",
+    name: "Matej Zupančič",
     role: "Production Manager",
     image: "src/teams/matej.png",
     bio: `With a strong background in professional kitchen equipment production, Matej manages 
@@ -324,7 +418,7 @@ const teamData = [
     seamless site execution.`
   },
   {
-    name: "Dejan",
+    name: "Dejan Škrjanc",
     role: "Plant Manager",
     image: "src/teams/dejan.png",
     bio: `With extensive experience in professional kitchen equipment manufacturing, Dejan oversees 
@@ -340,12 +434,17 @@ const teamData = [
     consultants and contractors.`
   },
   {
-    name: "Ales",
+    name: "Aleš Smrekar",
     role: "R&D Manager",
     image: "src/teams/ales.png",
     bio: `With 20 years of experience, Aleš began his career as a technician before advancing to Head of 
-    R&D. Known for innovation in sheet metal design, he delivers practical engineering solutions that 
-    enhance production efficiency.`
+    R&D. 
+                   <div class="bio-divider"> </div>
+    <p>
+    Known for innovation in sheet metal design, he delivers practical engineering solutions that 
+    enhance production efficiency.
+    </p>
+    `
   }
 ];
 
@@ -362,7 +461,7 @@ function renderTeam() {
         <div class="team-member-overlay">
           <p class="team-member-name">${member.name}</p>
           <p class="team-member-role">${member.role}</p>
-          <p class="team-member-bio">${member.bio}</p>
+          <p>${member.bio}</p>
         </div>
         <button class="details-button">
           <span class="plus-icon">+</span>
