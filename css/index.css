@@ -1303,6 +1303,19 @@ CEO SECTION
   }
 }
 
+@media (max-width: 800px) {
+    .slider-paragraph {
+        min-height: 14rem; 
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .slider-title{
+      min-height: 12rem;
+    }
+  }
+
 /* 
 -------------------------
 END

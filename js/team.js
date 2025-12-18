@@ -232,7 +232,7 @@ const teamData = [
   {
     name: "Muhammed Nafih",
     role: "Accounting Manager",
-    image: "src/teams/muhammed.png",
+    image: "src/teams/nafih.png",
     bio: ""
   },
   {

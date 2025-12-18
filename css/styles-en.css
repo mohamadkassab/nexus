@@ -20500,7 +20500,7 @@ h2 a.title-font-size-extra-large {
 
 @media (max-width: 767px) {
   .slick-slider .slick-dots {
-    bottom: 10px;
+    bottom: -20px;
   }
 }
 .slick-slider .slick-dots li[role="presentation"],
