@@ -79,7 +79,7 @@ const teamData = [
   },
   {
     name: "Girish Rao",
-    role: "Partner <br> IMEA",
+    role: "Partner IMEA",
     image: "src/teams/girish.png",
     bio: `With over 25 years of experience in HVAC and commercial kitchen ventilation, Girish leads the 
     delivery of innovative, sustainable, and high-performance solutions across the IMEA region. 
