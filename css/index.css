@@ -1303,6 +1303,12 @@ CEO SECTION
   }
 }
 
+@media(max-width: 800px){
+    .about-title{
+    padding-top: 30px;
+  }
+}
+
 @media (max-width: 800px) {
     .slider-paragraph {
         min-height: 14rem; 

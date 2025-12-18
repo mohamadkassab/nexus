@@ -65,217 +65,287 @@ const teamData = [
     name: "Hassan Anouti",
     role: "CEO",
     image: "src/teams/hassan.png",
-    bio: "With a Master’s from Paris-Sorbonne and a BBA from Northwood University (Swiss Campus), Hassan brings more than 15 years of industry experience across hospitality, hotels, and F&B development.<br><br>He is known for his structured approach, clear decision-making, and ability to turn complex ideas into operationally strong concepts that scale, bringing a structured, analytical, and results-driven mindset to every project."
+    bio: `With a Master’s from Paris-Sorbonne and a BBA from Northwood University (Swiss Campus), 
+    Hassan brings more than 15 years of industry experience across hospitality, hotels, and F&B 
+    development. He is known for his structured approach, clear decision-making, and ability to turn 
+    complex ideas into operationally strong concepts that scale, bringing a structured, analytical, 
+    and results-driven mindset to every project.` 
   },
   {
     name: "Girish Rao",
     role: "Managing Partner <br> IMEA",
     image: "src/teams/girish.png",
-    bio: "With a Master’s from Paris-Sorbonne and a BBA from Northwood University (Swiss Campus), Hassan brings more than 15 years of industry experience across hospitality, hotels, and F&B development.<br><br> He is known for his structured approach, clear decision-making, and ability to turn complex ideas into operationally strong concepts that scale, bringing a structured, analytical, and results-driven mindset to every project."                      
+    bio: `With over 25 years of experience in HVAC and commercial kitchen ventilation, Girish leads the 
+    delivery of innovative, sustainable, and high-performance solutions across the IMEA region. He 
+    oversees complex projects for hotels, restaurants, cloud kitchens, and industrial food facilities, 
+    combining technical depth with strategic leadership.`  
   },
   {
     name: "Miran Štirn",
     role: "Partner Europe",
     image: "src/teams/miran.png",
-    bio: "With a Master’s from Paris-Sorbonne and a BBA from Northwood University (Swiss Campus), Hassan brings more than 15 years of industry experience across hospitality, hotels, and F&B development.<br><br> He is known for his structured approach, clear decision-making, and ability to turn complex ideas into operationally strong concepts that scale, bringing a structured, analytical, and results-driven mindset to every project."                                               
+    bio: `With a Bachelor’s degree in Mechanical Engineering and nearly 30 years of experience in the 
+    catering equipment industry, Miran is a serial entrepreneur with deep expertise in kitchen 
+    innovation. He previously served as Owner and CEO of a modular kitchen manufacturing 
+    company and founded Kopa Grilling Solutions and Kook Show Kitchen, focusing on advanced 
+    grilling and front-of-house cooking concepts.`  
   },
   {
     name: "Paul Richards",
     role: "Technical Director",
     image: "src/teams/paul.png",
-    bio: ""
+    bio: `Paul brings more than 35 years of experience in the Middle East across commercial HVAC and 
+    kitchen ventilation systems. Known for his hands-on approach, he ensures energy-efficient, 
+    compliant, and high-performance solutions, supporting the successful execution of large-scale 
+    hospitality and infrastructure projects.`
   },
   {
     name: "Jayadev Kalliat",
     role: "Director of Operations",
     image: "src/teams/jayadev.png",
-    bio: ""  
+    bio: `With a background in mechanical engineering and over 17 years of experience across the GCC, 
+    Jayadev specializes in commercial refrigeration and kitchen equipment manufacturing. He 
+    oversees technical management, strategic sourcing and procurement, and end-to-end project 
+    delivery for high-end hospitality, retail, and residential developments.`
   },
   {
     name: "Ivan",
     role: "Production Director",
     image: "src/teams/ivan.png",
-    bio: ""  
+    bio: `A mechanical engineer with 27 years of experience, Ivan began his career in a leading Slovenian 
+    modular kitchen manufacturer, later becoming Head of R&D. An independent entrepreneur since 
+    2000, he combines hands-on technical expertise with leadership in sheet metal production and 
+    product development.`
   },
   {
     name: "Branislav Vorgic",
     role: "Director of Technology",
     image: "src/teams/branislav.png",
-    bio: ""  
+    bio: `With 20 years of experience in commercial kitchen equipment production and R&D, Branislav is a 
+    seasoned expert in product development and manufacturing optimization. He plays a key role in 
+    driving innovation, improving production efficiency, and enhancing equipment quality across the 
+    group’s portfolio.`
   },
-    {
-    name: "Branislav Vorgic",
-    role: "Director of Technology",
-    image: "src/teams/branislav.png",
-    bio: ""  
-  },
-    {
+  {
     name: "Filippo Maria Genovesi",
     role: "Commercial Director",
     image: "src/teams/filippo.png",
-    bio: ""
+    bio: `With over a decade of specialized experience in the GCC, Filippo combines strong commercial 
+    leadership with technical expertise in front-of-house display solutions. As Commercial Director, 
+    he drives growth strategy, builds long-term partnerships, and leads sales initiatives across 
+    complex hospitality and foodservice projects.`
   },
   {
     name: "Hasnae El Horma",
     role: "Supply Chain Manager",
     image: "src/teams/hasnae.png",
-    bio: ""
+    bio: `With several years of experience in the professional kitchen equipment industry, Hasnae plays a 
+    key role across supply chain coordination and internal operations. She supports multiple 
+    departments and ensures continuity, efficiency, and reliability across daily business activities.`
   },
   {
     name: "Darko Josimov",
     role: "R&D Manager",
     image: "src/teams/darko.png",
-    bio: ""
+    bio: `With over 25 years of experience, Darko has spent the last 13 years focused on the design and 
+    development of commercial kitchen equipment, including refrigeration, cooking, and extraction 
+    systems, supporting hospitality and foodservice sectors across Europe and the Middle East.`
   },
   {
     name: "Beatrice Trevisan",
     role: "Brand Manager",
     image: "src/teams/beatrice.png",
-    bio: ""
+    bio: `With over ten years of experience across leading industry brands, Beatrice has developed a 
+    strong foundation in business development with a focus on the Middle Eastern market. Driven 
+    and analytical, she leads brand growth initiatives, aligning commercial strategy with operational 
+    execution.`
   },
   {
     name: "Jihane El Fady",
     role: "Brand Manager",
     image: "src/teams/jihane.png",
-    bio: ""
+    bio: `With six years of regional experience, Jihane leads business development initiatives in advanced 
+    kitchen and ventilation systems across the GCC. Her strategic insight, strong industry 
+    relationships, and involvement in high-profile hospitality projects contribute to sustained brand 
+    growth and market presence.`
   },
   {
     name: "Katerina Moroz",
     role: "Business Development Manager",
     image: "src/teams/katerina.png",
-    bio: ""
+    bio: `With over ten years of experience in hospitality and the commercial kitchen industry, Katerina 
+    specializes in business development and client relations, contributing to strategic partnerships, 
+    market expansion, and operational excellence across the UAE.`
   },
   {
     name: "Ali Anouty",
     role: "Brand Manager",
     image: "src/teams/ali.png",
-    bio: ""
+    bio: `Holding an MBA from the American University, Ali brings five years of experience across sales, 
+    procurement, and production operations. He supports the group through effective business 
+    development, process optimization, and strong client relationship management.`
   },
   {
     name: "Joelle Osta",
     role: "Marketing Manager",
     image: "src/teams/joelle.png",
-    bio: ""
+    bio: `With over a decade of experience in graphic design and marketing, Joelle combines creative 
+    vision with strategic thinking. With more than three years in the commercial kitchen industry, she 
+    leads brand strategy, visual communication, and marketing initiatives across the group.`
   },
   {
     name: "Aymen Chemli",
     role: "Design Manager",
     image: "src/teams/aymen.png",
-    bio: ""
-  },
-  {
-    name: "Sasa",
-    role: "Administration Manager",
-    image: "src/teams/sasa.png",
-    bio: ""
+    bio: `A graduate of the University of Art and Design in Tunisia, Aymen brings 23 years of experience 
+    across interior design, product design, and kitchen manufacturing. His expertise bridges creative 
+    vision with technical execution, delivering production-ready, high-quality F&B design solutions.`
   },
   {
     name: "Nirupama Rao",
     role: "Director of Finance & HR",
     image: "src/teams/nirupama.png",
-    bio: ""
+    bio: `With an MBA and 25 years of experience across UAE banking and the HVAC industry, Nirupama 
+    leads finance and HR functions, supporting business growth through financial planning, 
+    regulatory compliance, talent development, and people-focused leadership`
   },
   {
     name: "Abed Kawahaty",
     role: "Expert Manager",
     image: "src/teams/abed.png",
-    bio: ""
+    bio: `Holding a BA in International Hospitality and over 20 years of experience, Abed specializes in 
+    sales and business development, supporting Nexus Kitchen Group’s growth and market 
+    leadership across the GCC.`
   },
   {
     name: "Jasmin D.Ronquillo",
     role: "Commercial Support Manager",
     image: "src/teams/jasmin.png",
-    bio: ""
+    bio: `As a detail-driven commercial support professional, Jasmin strengthens documentation, 
+    reporting discipline, and workflow efficiency. She supports sales and project teams by 
+    maintaining strong client relationships, improving data accuracy, and ensuring smooth revenue 
+    operations.`
   },
   {
     name: "Khasim Hussain",
     role: "Technical Manager",
     image: "src/teams/khasim.png",
-    bio: ""
+    bio: `With 12 years of experience in the manufacturing industry, Khasim specializes in front-of-house 
+    kitchen solutions, bar design, and project coordination. His leadership ensures functional, 
+    innovative designs that enhance customer experience and operational efficiency.`
   },
   {
     name: "Perly Massaad",
     role: "Digital Marketing Executive",
     image: "src/teams/perly.png",
-    bio: ""
+    bio: `With over ten years of experience in graphic design and marketing, Perly manages digital content 
+    and social media initiatives. Her work enhances brand visibility, engagement, and creative 
+    consistency across platforms and campaigns.`
   },
   {
     name: "Tawfiq Suleiman",
     role: "Aftersales Service Manager",
     image: "src/teams/tawfiq.png",
-    bio: ""
+    bio: `With extensive experience in professional kitchen equipment and aftersales operations, Tawfiq 
+    oversees service coordination, maintenance planning, and customer support, ensuring long-term 
+    performance and high levels of client satisfaction.`
   },
   {
     name: "Ganesh Raja",
     role: "R&D Executive",
     image: "src/teams/ganesh.png",
-    bio: ""
+    bio: `With over 14 years of experience in commercial kitchen equipment fabrication, Ganesh 
+    specializes in product research, development, and optimization. Proficient in advanced 3D CAD 
+    tools, he supports innovation-driven, high-performance product solutions.`
   },
   {
     name: "Clara Dagher",
     role: "Product Engineer",
     image: "src/teams/clara.png",
-    bio: ""
+    bio: `With a background in industrial engineering, Clara brings strong technical expertise to her role as 
+    Product Engineer. She supports operations through accurate cost analysis, project evaluation, 
+    and solution development, contributing to operational efficiency and informed decision-making 
+    across projects.`
   },
   {
     name: "Francis Prable",
     role: "Estimation Manager",
     image: "src/teams/francis.png",
-    bio: ""
+    bio: `A mechanical engineer with over ten years of experience in the foodservice industry, Francis 
+    specializes in tender estimation, procurement coordination, and multi-brand project execution 
+    across the GCC region.`
   },
   {
     name: "Jayadeep Kalliat",
     role: "Project Manager",
     image: "src/teams/jayadeep.png",
-    bio: ""
+    bio: `A mechanical engineering professional with over seven years of experience in the commercial 
+    refrigeration sector, Jayadeep specializes in operations and project management, delivering 
+    customer-focused solutions and ensuring efficient execution across complex technical projects.`
   },
   {
     name: "Muhammed Nafih",
     role: "Accounting Manager",
     image: "src/teams/nafih.png",
-    bio: ""
+    bio: `A Certified Management Accountant with eight years of experience in FP&A and cost accounting, 
+    Nafih supports budgeting, forecasting, financial controls, and analysis, providing actionable 
+    insights that strengthen profitability, cash flow, and strategic decision-making.`
   },
   {
     name: "Matej",
     role: "Production Manager",
     image: "src/teams/matej.png",
-    bio: ""
+    bio: `With a strong background in professional kitchen equipment production, Matej manages 
+    manufacturing processes, workflow optimization, and quality standards, ensuring consistent and 
+    efficient production across Kopa grilling solutions.`
   },
   {
     name: "Joy Prakash Rodrigues",
     role: "Sales Manager",
     image: "src/teams/joy.png",
-    bio: ""
+    bio: `A mechanical engineer with over 15 years of experience in the UAE, Joy specializes in sales and 
+    operations, supporting major F&B projects from design development through execution and 
+    handover across the Middle East.`
   },
   {
     name: "Avinash Natarajan",
     role: "Country Manager, India",
     image: "src/teams/avinash.png",
-    bio: ""
+    bio: `With 20 years of hospitality experience across the UAE and India, Avinash leads business 
+    development and end-to-end project delivery, strengthening partnerships and ensuring 
+    consistent execution across regional operations.`
   },
   {
     name: "Vipul Sharma",
     role: "Project & Service Manager",
     image: "src/teams/vipul.png",
-    bio: ""
+    bio: `With over 13 years of experience across India and the Middle East, Vipul specializes in project 
+    management, installation, and testing and commissioning, ensuring regulatory compliance and 
+    seamless site execution.`
   },
   {
     name: "Dejan",
     role: "Plant Manager",
     image: "src/teams/dejan.png",
-    bio: ""
+    bio: `With extensive experience in professional kitchen equipment manufacturing, Dejan oversees 
+    plant operations, production efficiency, and quality control, supporting the delivery of high-
+    performance grilling and cooking solutions.`
   },
   {
     name: "Vijaykumar Kolachi",
     role: "Sales & Operations Manager, India",
     image: "src/teams/vijaykumar.png",
-    bio: ""
+    bio: `With over seven years of experience in commercial kitchen ventilation, Vijay leads sales and 
+    operations in India, delivering tailored solutions while ensuring smooth coordination with 
+    consultants and contractors.`
   },
   {
     name: "Ales",
     role: "R&D Manager",
     image: "src/teams/ales.png",
-    bio: ""
+    bio: `With 20 years of experience, Aleš began his career as a technician before advancing to Head of 
+    R&D. Known for innovation in sheet metal design, he delivers practical engineering solutions that 
+    enhance production efficiency.`
   }
 ];
 
