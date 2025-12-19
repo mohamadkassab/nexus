@@ -358,7 +358,7 @@ const teamData = [
     She supports operations through accurate cost analysis, project evaluation, 
     and solution development, contributing to operational efficiency and informed decision-making 
     across projects.
-        </p>
+      </p>
     `
   },
   {
