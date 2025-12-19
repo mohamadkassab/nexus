@@ -64,7 +64,7 @@ const teamData = [
   {
     name: "Hassan Anouti",
     role: "CEO",
-    image: "src/teams/hassan.png",
+    image: "src/teams/hassan.webp",
     bio: `
     With a Master’s from Paris-Sorbonne and a BBA from Northwood University (Swiss Campus), 
     Hassan brings more than 15 years of industry experience across hospitality, hotels, and F&B 
@@ -80,7 +80,7 @@ const teamData = [
   {
     name: "Girish Rao",
     role: "Partner IMEA",
-    image: "src/teams/girish.png",
+    image: "src/teams/girish.webp",
     bio: `With over 25 years of experience in HVAC and commercial kitchen ventilation, Girish leads the 
     delivery of innovative, sustainable, and high-performance solutions across the IMEA region. 
     <div class="bio-divider"> </div>
@@ -92,7 +92,7 @@ const teamData = [
   {
     name: "Miran Štirn",
     role: "Partner Europe",
-    image: "src/teams/miran.png",
+    image: "src/teams/miran.webp",
     bio: `With a Bachelor’s degree in Mechanical Engineering and nearly 30 years of experience in the 
     catering equipment industry, Miran is a serial entrepreneur with deep expertise in kitchen 
     innovation. 
@@ -106,7 +106,7 @@ const teamData = [
   {
     name: "Paul Richards",
     role: "Technical Director",
-    image: "src/teams/paul.png",
+    image: "src/teams/paul.webp",
     bio: `
     Paul brings more than 35 years of experience in the Middle East across commercial HVAC and 
     kitchen ventilation systems. 
@@ -121,7 +121,7 @@ const teamData = [
   {
     name: "Jayadev Kalliat",
     role: "Director of Operations",
-    image: "src/teams/jayadev.png",
+    image: "src/teams/jayadev.webp",
     bio: `
     With a background in mechanical engineering and over 17 years of experience across the GCC, 
     Jayadev specializes in commercial refrigeration and kitchen equipment manufacturing. 
@@ -135,7 +135,7 @@ const teamData = [
   {
     name: "Ivan Garbas",
     role: "Production Director",
-    image: "src/teams/ivan.png",
+    image: "src/teams/ivan.webp",
     bio: `A mechanical engineer with 27 years of experience, Ivan began his career in a leading Slovenian 
     modular kitchen manufacturer, later becoming Head of R&D. 
            <div class="bio-divider"> </div>
@@ -149,7 +149,7 @@ const teamData = [
   {
     name: "Branislav Vorgic",
     role: "Director of Technology",
-    image: "src/teams/branislav.png",
+    image: "src/teams/branislav.webp",
     bio: `With 20 years of experience in commercial kitchen equipment production and R&D, Branislav is a 
     seasoned expert in product development and manufacturing optimization. 
        <div class="bio-divider"> </div>
@@ -163,7 +163,7 @@ const teamData = [
   {
     name: "Filippo Maria Genovesi",
     role: "Commercial Director",
-    image: "src/teams/filippo.png",
+    image: "src/teams/filippo.webp",
     bio: `
     With over a decade of specialized experience in the GCC, Filippo combines strong commercial 
     leadership with technical expertise in front-of-house display solutions. 
@@ -178,7 +178,7 @@ const teamData = [
   {
     name: "Hasnae El Horma",
     role: "Supply Chain Manager",
-    image: "src/teams/hasnae.png",
+    image: "src/teams/hasnae.webp",
     bio: `With several years of experience in the professional kitchen equipment industry, Hasnae plays a 
     key role across supply chain coordination and internal operations. 
                <div class="bio-divider"> </div>
@@ -191,7 +191,7 @@ const teamData = [
   {
     name: "Darko Josimov",
     role: "R&D Manager",
-    image: "src/teams/darko.png",
+    image: "src/teams/darko.webp",
     bio: `With over 25 years of experience, Darko has spent the last 13 years focused on the design and 
     development of commercial kitchen equipment, including refrigeration, cooking, and extraction 
     systems, supporting hospitality and foodservice sectors across Europe and the Middle East.`
@@ -199,7 +199,7 @@ const teamData = [
   {
     name: "Beatrice Trevisan",
     role: "Brand Manager",
-    image: "src/teams/beatrice.png",
+    image: "src/teams/beatrice.webp",
     bio: `With over ten years of experience across leading industry brands, Beatrice has developed a 
     strong foundation in business development with a focus on the Middle Eastern market. 
            <div class="bio-divider"> </div>
@@ -212,7 +212,7 @@ const teamData = [
   {
     name: "Jihane El Fady",
     role: "Brand Manager",
-    image: "src/teams/jihane.png",
+    image: "src/teams/jihane.webp",
     bio: `With six years of regional experience, Jihane leads business development initiatives in advanced 
     kitchen and ventilation systems across the GCC. 
            <div class="bio-divider"> </div>
@@ -226,7 +226,7 @@ const teamData = [
   {
     name: "Katerina Moroz",
     role: "Business Development Manager",
-    image: "src/teams/katerina.png",
+    image: "src/teams/katerina.webp",
     bio: `With over ten years of experience in hospitality and the commercial kitchen industry, Katerina 
     specializes in business development and client relations, contributing to strategic partnerships, 
     market expansion, and operational excellence across the UAE.`
@@ -234,7 +234,7 @@ const teamData = [
   {
     name: "Ali Anouty",
     role: "Brand Manager",
-    image: "src/teams/ali.png",
+    image: "src/teams/ali.webp",
     bio: `Holding an MBA from the American University, Ali brings five years of experience across sales, 
     procurement, and production operations. 
                <div class="bio-divider"> </div>
@@ -247,7 +247,7 @@ const teamData = [
   {
     name: "Joelle Osta",
     role: "Marketing Manager",
-    image: "src/teams/joelle.png",
+    image: "src/teams/joelle.webp",
     bio: `With over a decade of experience in graphic design and marketing, Joelle combines creative 
     vision with strategic thinking. 
                <div class="bio-divider"> </div>
@@ -260,7 +260,7 @@ const teamData = [
   {
     name: "Aymen Chemli",
     role: "Design Manager",
-    image: "src/teams/aymen.png",
+    image: "src/teams/aymen.webp",
     bio: `A graduate of the University of Art and Design in Tunisia, Aymen brings 23 years of experience 
     across interior design, product design, and kitchen manufacturing. 
                <div class="bio-divider"> </div>
@@ -273,7 +273,7 @@ const teamData = [
   {
     name: "Nirupama Rao",
     role: "Director of Finance & HR",
-    image: "src/teams/nirupama.png",
+    image: "src/teams/nirupama.webp",
     bio: `With an MBA and 25 years of experience across UAE banking and the HVAC industry, Nirupama 
     leads finance and HR functions, supporting business growth through financial planning, 
     regulatory compliance, talent development, and people-focused leadership`
@@ -281,7 +281,7 @@ const teamData = [
   {
     name: "Abed Kawahaty",
     role: "Expert Manager",
-    image: "src/teams/abed.png",
+    image: "src/teams/abed.webp",
     bio: `Holding a BA in International Hospitality and over 20 years of experience, Abed specializes in 
     sales and business development, supporting Nexus Kitchen Group’s growth and market 
     leadership across the GCC.`
@@ -289,7 +289,7 @@ const teamData = [
   {
     name: "Jasmin D.Ronquillo",
     role: "Commercial Support Manager",
-    image: "src/teams/jasmin.png",
+    image: "src/teams/jasmin.webp",
     bio: `As a detail-driven commercial support professional, Jasmin strengthens documentation, 
     reporting discipline, and workflow efficiency. 
                <div class="bio-divider"> </div>
@@ -303,7 +303,7 @@ const teamData = [
   {
     name: "Khasim Hussain",
     role: "Technical Manager",
-    image: "src/teams/khasim.png",
+    image: "src/teams/khasim.webp",
     bio: `With 12 years of experience in the manufacturing industry, Khasim specializes in front-of-house 
     kitchen solutions, bar design, and project coordination. 
                <div class="bio-divider"> </div>
@@ -316,7 +316,7 @@ const teamData = [
   {
     name: "Perly Massaad",
     role: "Digital Marketing Executive",
-    image: "src/teams/perly.png",
+    image: "src/teams/perly.webp",
     bio: `With over ten years of experience in graphic design and marketing, Perly manages digital content 
     and social media initiatives. 
                    <div class="bio-divider"> </div>
@@ -329,7 +329,7 @@ const teamData = [
   {
     name: "Tawfiq Suleiman",
     role: "Aftersales Service Manager",
-    image: "src/teams/tawfiq.png",
+    image: "src/teams/tawfiq.webp",
     bio: `With extensive experience in professional kitchen equipment and aftersales operations, Tawfiq 
     oversees service coordination, maintenance planning, and customer support, ensuring long-term 
     performance and high levels of client satisfaction.`
@@ -337,7 +337,7 @@ const teamData = [
   {
     name: "Ganesh Raja",
     role: "R&D Executive",
-    image: "src/teams/ganesh.png",
+    image: "src/teams/ganesh.webp",
     bio: `With over 14 years of experience in commercial kitchen equipment fabrication, Ganesh 
     specializes in product research, development, and optimization. 
                    <div class="bio-divider"> </div>
@@ -350,7 +350,7 @@ const teamData = [
   {
     name: "Clara Dagher",
     role: "Product Engineer",
-    image: "src/teams/clara.png",
+    image: "src/teams/clara.webp",
     bio: `With a background in industrial engineering, Clara brings strong technical expertise to her role as 
     Product Engineer. 
                <div class="bio-divider"> </div>
@@ -364,7 +364,7 @@ const teamData = [
   {
     name: "Francis Prable",
     role: "Estimation Manager",
-    image: "src/teams/francis.png",
+    image: "src/teams/francis.webp",
     bio: `A mechanical engineer with over ten years of experience in the foodservice industry, Francis 
     specializes in tender estimation, procurement coordination, and multi-brand project execution 
     across the GCC region.`
@@ -372,7 +372,7 @@ const teamData = [
   {
     name: "Jayadeep Kalliat",
     role: "Project Manager",
-    image: "src/teams/jayadeep.png",
+    image: "src/teams/jayadeep.webp",
     bio: `A mechanical engineering professional with over seven years of experience in the commercial 
     refrigeration sector, Jayadeep specializes in operations and project management, delivering 
     customer-focused solutions and ensuring efficient execution across complex technical projects.`
@@ -380,7 +380,7 @@ const teamData = [
   {
     name: "Muhammed Nafih",
     role: "Accounting Manager",
-    image: "src/teams/nafih.png",
+    image: "src/teams/nafih.webp",
     bio: `A Certified Management Accountant with eight years of experience in FP&A and cost accounting, 
     Nafih supports budgeting, forecasting, financial controls, and analysis, providing actionable 
     insights that strengthen profitability, cash flow, and strategic decision-making.`
@@ -388,7 +388,7 @@ const teamData = [
   {
     name: "Matej Zupančič",
     role: "Production Manager",
-    image: "src/teams/matej.png",
+    image: "src/teams/matej.webp",
     bio: `With a strong background in professional kitchen equipment production, Matej manages 
     manufacturing processes, workflow optimization, and quality standards, ensuring consistent and 
     efficient production across Kopa grilling solutions.`
@@ -396,7 +396,7 @@ const teamData = [
   {
     name: "Joy Prakash Rodrigues",
     role: "Sales Manager",
-    image: "src/teams/joy.png",
+    image: "src/teams/joy.webp",
     bio: `A mechanical engineer with over 15 years of experience in the UAE, Joy specializes in sales and 
     operations, supporting major F&B projects from design development through execution and 
     handover across the Middle East.`
@@ -404,7 +404,7 @@ const teamData = [
   {
     name: "Avinash Natarajan",
     role: "Country Manager, India",
-    image: "src/teams/avinash.png",
+    image: "src/teams/avinash.webp",
     bio: `With 20 years of hospitality experience across the UAE and India, Avinash leads business 
     development and end-to-end project delivery, strengthening partnerships and ensuring 
     consistent execution across regional operations.`
@@ -412,7 +412,7 @@ const teamData = [
   {
     name: "Vipul Sharma",
     role: "Project & Service Manager",
-    image: "src/teams/vipul.png",
+    image: "src/teams/vipul.webp",
     bio: `With over 13 years of experience across India and the Middle East, Vipul specializes in project 
     management, installation, and testing and commissioning, ensuring regulatory compliance and 
     seamless site execution.`
@@ -420,7 +420,7 @@ const teamData = [
   {
     name: "Dejan Škrjanc",
     role: "Plant Manager",
-    image: "src/teams/dejan.png",
+    image: "src/teams/dejan.webp",
     bio: `With extensive experience in professional kitchen equipment manufacturing, Dejan oversees 
     plant operations, production efficiency, and quality control, supporting the delivery of high-
     performance grilling and cooking solutions.`
@@ -428,7 +428,7 @@ const teamData = [
   {
     name: "Vijaykumar Kolachi",
     role: "Sales & Operations Manager, India",
-    image: "src/teams/vijaykumar.png",
+    image: "src/teams/vijaykumar.webp",
     bio: `With over seven years of experience in commercial kitchen ventilation, Vijay leads sales and 
     operations in India, delivering tailored solutions while ensuring smooth coordination with 
     consultants and contractors.`
@@ -436,7 +436,7 @@ const teamData = [
   {
     name: "Aleš Smrekar",
     role: "R&D Manager",
-    image: "src/teams/ales.png",
+    image: "src/teams/ales.webp",
     bio: `With 20 years of experience, Aleš began his career as a technician before advancing to Head of 
     R&D. 
                    <div class="bio-divider"> </div>
