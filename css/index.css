@@ -123,6 +123,13 @@ header {
   padding-top: 20px;
   width: 100vw;
   background-repeat: repeat-x;
+  height: 130px; /* TODO: hero-margin  */
+}
+
+@media(max-width: 800px){
+  .hero-logos {
+    height: 80px; /* TODO: hero-margin  */
+  }
 }
 
 .hero-logos a{
@@ -1053,12 +1060,14 @@ hr,
   color: "#ffffff";
   font-weight: 600;
   font-size: clamp(1.5rem, 2.5vw + 1rem, 2.625rem);
-  line-height: 1.2; 
+  line-height: 1.2;
+  padding-top: 18px;     /* TODO: hero-margin  */
 }
 
 @media(max-width: 800px){
   .brand-slogan{
     font-size: 30px;
+    padding-top: 15px; /* TODO: hero-margin  */
   }
 }
 

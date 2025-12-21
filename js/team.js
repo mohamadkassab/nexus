@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
 const teamData = [
   {
     name: "Hassan Anouti",
-    role: "CEO",
+    role: "Group CEO",
     image: "src/teams/hassan.webp",
     bio: `
     With a Master’s from Paris-Sorbonne and a BBA from Northwood University (Swiss Campus), 
@@ -79,7 +79,7 @@ const teamData = [
   },
   {
     name: "Girish Rao",
-    role: "Partner IMEA",
+    role: "Managing Partner <br> IMEA",
     image: "src/teams/girish.webp",
     bio: `With over 25 years of experience in HVAC and commercial kitchen ventilation, Girish leads the 
     delivery of innovative, sustainable, and high-performance solutions across the IMEA region. 
@@ -91,7 +91,7 @@ const teamData = [
   },
   {
     name: "Miran Štirn",
-    role: "Partner Europe",
+    role: "Managing Partner <br> Europe",
     image: "src/teams/miran.webp",
     bio: `With a Bachelor’s degree in Mechanical Engineering and nearly 30 years of experience in the 
     catering equipment industry, Miran is a serial entrepreneur with deep expertise in kitchen 
@@ -330,9 +330,11 @@ const teamData = [
     name: "Tawfiq Suleiman",
     role: "Aftersales Service Manager",
     image: "src/teams/tawfiq.webp",
-    bio: `With extensive experience in professional kitchen equipment and aftersales operations, Tawfiq 
-    oversees service coordination, maintenance planning, and customer support, ensuring long-term 
-    performance and high levels of client satisfaction.`
+    bio: `With over five years of experience in refrigeration and catering equipment manufacturing,
+     installation, and maintenance, Tawfiq brings a strong technical foundation to his role. 
+     Holding a BSc in Mechanical Engineering and an MSc in HVAC/R, 
+     he oversees production coordination and after-sales services, 
+     ensuring reliability, efficiency, and long-term equipment performance.`
   },
   {
     name: "Ganesh Raja",
