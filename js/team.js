@@ -179,12 +179,12 @@ const teamData = [
     name: "Hasnae El Horma",
     role: "Supply Chain Manager",
     image: "src/teams/hasnae.webp",
-    bio: `With several years of experience in the professional kitchen equipment industry, Hasnae plays a 
-    key role across supply chain coordination and internal operations. 
+    bio: `Holding a postgraduate degree in Tourism Management, Hasnae brings over nine years of experience across tourism, 
+    hospitality, kitchen equipment manufacturing, and supply chain operations. 
                <div class="bio-divider"> </div>
     <p>
-    She supports multiple 
-    departments and ensures continuity, efficiency, and reliability across daily business activities.
+        She specializes in logistics, procurement, and project execution, supporting the organization through structured processes,
+        operational excellence, and effective cross-department collaboration.
      </p>
     `
   },
@@ -331,10 +331,14 @@ const teamData = [
     role: "Aftersales Service Manager",
     image: "src/teams/tawfiq.webp",
     bio: `With over five years of experience in refrigeration and catering equipment manufacturing,
-     installation, and maintenance, Tawfiq brings a strong technical foundation to his role. 
+     installation, and maintenance, Tawfiq brings a strong technical foundation to his role.
+     
+                        <div class="bio-divider"> </div>
+    <p>
      Holding a BSc in Mechanical Engineering and an MSc in HVAC/R, 
      he oversees production coordination and after-sales services, 
-     ensuring reliability, efficiency, and long-term equipment performance.`
+     ensuring reliability, efficiency, and long-term equipment performance.
+      </p>`
   },
   {
     name: "Ganesh Raja",
