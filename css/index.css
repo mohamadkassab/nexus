@@ -623,9 +623,9 @@ hr,
 
 /* Min-width 1500px */
 @media (min-width: 1500px) {
-  /* .hero {
-    height: calc(100vh - 30px) !important;
-  } */
+  .hero {
+    height: calc(100vh) !important;
+  }
 }
 
 .empty-space {
