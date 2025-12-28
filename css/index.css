@@ -117,7 +117,7 @@ header {
   align-items: center;
   gap: 0;
   flex-wrap: nowrap;
-  background-image: url("../src/patterns.jpg");
+  background-image: url("../src/patterns-v2.webp");
   background-size: auto 100%;
   padding-bottom: 20px;
   padding-top: 20px;
@@ -1106,118 +1106,139 @@ hr,
 CEO SECTION 
 -------------------------
 */
-.ceo-msg-container{
-  background-color: var(--bg-dark);
-  padding: 50px 150px;
-  width: 100vw;
+/* 
+   Container: Establishes the stacking context.
+   We use min-height to ensure it looks good even with little text,
+   but let padding dictate the actual height based on content.
+*/
+.ceo-hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 600px; /* Optional: Minimum height for aesthetic */
   display: flex;
   align-items: center;
-  justify-content: space-between;  
-}
-.ceo-msg-wrapper{
-  display: flex;
-  align-items: center;
-  justify-content: center;  
-  max-width: 1800px;
-  gap: 100px;
+  justify-content: center;
+  padding: 80px 20px; /* Top/Bottom padding ensures text doesn't hit edges */
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
-.ceo-msg-img-container{
+/* 
+   Background Wrapper: positioned absolutely behind the content.
+   inset: 0 is a modern shorthand for top:0; right:0; bottom:0; left:0;
+*/
+.ceo-hero-bg {
+  position: absolute;
+  inset: 0; 
+  z-index: 0;
+}
+
+/* 
+   The Image: Covers the area without distortion.
+*/
+.ceo-hero-bg img {
   width: 100%;
-  max-width: 500px;
   height: 100%;
-  aspect-ratio: 1/1;
+  object-fit: cover; 
+  object-position: top; 
 }
 
-.ceo-msg-container img{
-  width: 100%;
-  height: 100% !important;
-  object-fit: contain;
-  height: auto;
+/* 
+   The Scrim (Best Practice): 
+   Adds a semi-transparent black layer. 
+   Without this, white text is unreadable on light image areas.
+*/
+.ceo-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* 60% opacity black */
+  /* Optional: Use a gradient for a more premium look */
+  /* background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.4)); */
 }
 
-.ceo-msg-content{
-  max-width: 700px;
+/* 
+   Content: Position relative to sit ON TOP of the absolute background 
+*/
+.ceo-msg-content {
+  position: relative;
+  z-index: 1; /* Puts text above the image and overlay */
+  max-width: 900px; /* Controlled width for readability (approx 75 chars per line) */
+  text-align: center; /* or left, depending on preference */
+  color: #fff;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.6;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 
-@media(max-width: 1450px){
-  .ceo-msg-wrapper{
-    flex-direction: column;
-    gap: 60px;
-  }
-
-  .ceo-msg-container
-  {
-    padding: 60px 10px;
-  }
-
-  .ceo-msg-container{
-    align-items: center;
-    justify-content: center;  
-  }
-}
-
-.ceo-msg-content{
-    font-weight: 300;
-    color: #fff;
-    font-size: 22px;
-    line-height: 34px;
-}
-
-
-
-.ceo-msg-footer{
+/* Footer Styling */
+.ceo-msg-footer {
+  margin-top: 40px;
   font-size: 18px;
-  margin-top: 20px;
-  padding: 0rem 2rem 1rem 3rem; 
+  font-weight: 500;
 }
 
-@media (max-width: 1023px){
-  .ceo-msg-content
-  {
-    font-size: 18px;
-  }
-  .ceo-msg-footer{
-    font-size: 16px;
-  }
-}
-
+/* --- Quote Decorations (Refined) --- */
 .ceo-msg-content > p:first-of-type {
   position: relative;
-  padding: 0rem 2rem 1rem 3rem; 
-  z-index: 1;
-}
-
-@media (max-width: 1023px)
-{
-  .ceo-msg-content > p:first-of-type {
-      padding: 0rem .5rem 1rem 2.4rem; 
-  }
+  display: inline-block; /* Helps keeps quotes tight to text */
+  margin-bottom: 0;
 }
 
 .ceo-msg-content > p:first-of-type::before {
   content: "\201F";
   position: absolute;
-  top: -10px;    
-  left: 0;
+  top: -40px;
+  left: -40px; /* Moved outside the text flow slightly */
   font-family: Georgia, serif;
-  font-size: 4rem;
-  line-height: 1;
-  color: #ccc;     
-  z-index: -1;     
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.3); /* Subtle opacity looks more premium */
 }
 
 .ceo-msg-content > p:first-of-type::after {
-  content: "\201D"; 
+  content: "\201D";
   position: absolute;
-  bottom: -20px;    
-  right: 0;
+  bottom: -60px;
+  right: -20px;
   font-family: Georgia, serif;
-  font-size: 4rem;
+  font-size: 5rem;
   line-height: 1;
-  color: #ccc;
-  z-index: -1;
+  color: rgba(255, 255, 255, 0.3);
 }
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+  .ceo-hero-section {
+    padding: 60px 20px;
+    min-height: auto;
+  }
+  
+  .ceo-msg-content {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left; /* Usually easier to read on mobile */
+  }
+
+  /* Adjust quotes for smaller screens */
+  .ceo-msg-content > p:first-of-type::before {
+    top: -30px;
+    left: -10px;
+    font-size: 3rem;
+  }
+  
+  .ceo-msg-content > p:first-of-type::after {
+    bottom: -40px;
+    right: 0;
+    font-size: 3rem;
+  }
+}
+/* 
+-------------------------
+END CEO SECTION 
+-------------------------
+*/
+
 
 @media(max-width: 800px){
   .md-divider{
@@ -1334,6 +1355,12 @@ CEO SECTION
 
 .bio-divider{
   height: 10px;
+}
+
+@media(min-width: 1500px){
+  .slick-track{
+    height: 1000px;
+  }
 }
 /* 
 -------------------------

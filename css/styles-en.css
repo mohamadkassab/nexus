@@ -18733,7 +18733,7 @@ h2 a.title-font-size-extra-large {
   }
 }
 .image-left.dark {
-  background: #000;
+    background-color: var(--bg-dark);
 }
 .image-left.dark .text-wrapper * {
   color: #fff;
