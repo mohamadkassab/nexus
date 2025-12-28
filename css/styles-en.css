@@ -11075,6 +11075,11 @@ button.close {
   min-height: 1px;
   display: none;
 }
+@media(min-width: 1500px){
+  .slick-slide {
+    height: 120%;
+  }
+}
 [dir="rtl"] .slick-slide {
   float: right;
 }

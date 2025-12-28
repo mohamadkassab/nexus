@@ -1131,6 +1131,7 @@ CEO SECTION
   position: absolute;
   inset: 0; 
   z-index: 0;
+  background-color: var(--bg-dark);
 }
 
 /* 
@@ -1143,17 +1144,11 @@ CEO SECTION
   object-position: top; 
 }
 
-/* 
-   The Scrim (Best Practice): 
-   Adds a semi-transparent black layer. 
-   Without this, white text is unreadable on light image areas.
-*/
 .ceo-hero-overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.6); /* 60% opacity black */
-  /* Optional: Use a gradient for a more premium look */
-  /* background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.4)); */
+  background-color: rgba(0, 0, 0, 0.3); 
+  background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.4));
 }
 
 /* 
