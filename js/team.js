@@ -66,14 +66,10 @@ const teamData = [
     role: "Group CEO",
     image: "src/teams/hassan.webp",
     bio: `
-    With a Master’s from Paris-Sorbonne and a BBA from Northwood University (Swiss Campus), 
-    Hassan brings more than 15 years of industry experience across hospitality, hotels, and F&B 
-    development. 
+    With a Master’s in Marketing from Paris-Sorbonne and a BBA in Hotel Management from Swiss University, Hasan brings over 10 years of experience in hotel operations and 17 years in food service and kitchen manufacturing.  
     <div class="bio-divider"> </div>
     <p>
-      He is known for his structured approach, clear decision-making, and ability to turn 
-      complex ideas into operationally strong concepts that scale, bringing a structured, analytical, 
-      and results-driven mindset to every project.
+      He is known for his ability to turn complex ideas into operationally strong concepts that scale, bringing an analytical and results-driven mindset to every project.
     </p>
     ` 
   },

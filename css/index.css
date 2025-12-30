@@ -1114,7 +1114,7 @@ CEO SECTION
 .ceo-hero-section {
   position: relative;
   width: 100%;
-  min-height: 600px; /* Optional: Minimum height for aesthetic */
+  height: 800px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1141,14 +1141,13 @@ CEO SECTION
   width: 100%;
   height: 100%;
   object-fit: cover; 
-  object-position: top; 
+  object-position: center; 
 }
 
 .ceo-hero-overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.3); 
-  background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.4));
+  background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.2));
 }
 
 /* 
@@ -1160,8 +1159,8 @@ CEO SECTION
   max-width: 900px; /* Controlled width for readability (approx 75 chars per line) */
   text-align: center; /* or left, depending on preference */
   color: #fff;
-  font-weight: 300;
-  font-size: 22px;
+  font-weight: 400;
+  font-size: 26px;
   line-height: 1.6;
   padding-right: 25px;
   padding-left: 25px;
@@ -1210,7 +1209,7 @@ CEO SECTION
   }
   
   .ceo-msg-content {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5;
     text-align: left; /* Usually easier to read on mobile */
   }
