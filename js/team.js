@@ -274,7 +274,7 @@ He is known for his ability to turn complex ideas into operationally strong conc
   },
   {
     name: "Abed Kawahaty",
-    role: "Expert Manager",
+    role: "Export Manager",
     image: "src/teams/abed.webp",
     bio: `Holding a BA in International Hospitality and over 20 years of experience, Abed specializes in 
     sales and business development, supporting Nexus Kitchen Group’s growth and market 
