@@ -1163,9 +1163,9 @@ CEO SECTION
 */
 .ceo-msg-content {
   position: relative;
-  z-index: 1; /* Puts text above the image and overlay */
-  max-width: 1200px; /* Controlled width for readability (approx 75 chars per line) */
-  text-align: center; /* or left, depending on preference */
+  z-index: 1; 
+  max-width: 1200px; 
+  text-align: center; 
   color: #fff;
   font-weight: 400;
   font-size: 26px;
@@ -1219,7 +1219,10 @@ CEO SECTION
   .ceo-msg-content {
     font-size: 20px;
     line-height: 1.5;
-    text-align: left; /* Usually easier to read on mobile */
+    text-align: left; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   /* Adjust quotes for smaller screens */
