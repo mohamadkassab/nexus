@@ -19356,6 +19356,12 @@ h2 a.title-font-size-extra-large {
   padding: 0;
   width: 100vw;
 }
+
+@media (max-width: 800px){
+  .area-text-image-full .image-wrapper {
+    max-height: 250px;
+  }
+}
 .area-text-image-full .image-wrapper img {
   margin: auto;
   max-width: 100%;
