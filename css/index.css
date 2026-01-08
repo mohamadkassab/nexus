@@ -1213,7 +1213,6 @@ CEO SECTION
 @media (max-width: 768px) {
   .ceo-hero-section {
     padding: 60px 20px;
-    height: fit-content;
     align-items: center;
     height: auto;
   }
