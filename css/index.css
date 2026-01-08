@@ -1213,16 +1213,14 @@ CEO SECTION
 @media (max-width: 768px) {
   .ceo-hero-section {
     padding: 60px 20px;
-    min-height: auto;
+    height: fit-content;
+
   }
   
   .ceo-msg-content {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5;
     text-align: left; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   /* Adjust quotes for smaller screens */
