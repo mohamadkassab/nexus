@@ -1215,6 +1215,7 @@ CEO SECTION
     padding: 60px 20px;
     height: fit-content;
     align-items: center;
+    height: auto;
   }
   
   .ceo-msg-content {
