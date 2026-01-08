@@ -1214,7 +1214,7 @@ CEO SECTION
   .ceo-hero-section {
     padding: 60px 20px;
     height: fit-content;
-
+    align-items: center;
   }
   
   .ceo-msg-content {
