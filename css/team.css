@@ -156,9 +156,9 @@
 
   /* 4. EXCEPTION: Make the first 3 items span 4 columns */
   /* 12 columns / 4 span = 3 items per row (For the first row) */
-  .team-member-card:nth-child(-n+3) {
+  /* .team-member-card:nth-child(-n+3) {
     grid-column: span 4;
-  }
+  } */
 
   /* Desktop hover effects */
   .team-member-card:hover {
@@ -183,12 +183,12 @@
   }
 
   /* 5. UPDATE: Hide items starting from the 4th one */
-  .team-member-card:nth-child(n + 4) {
+  .team-member-card:nth-child(n + 5) {
     display: none;
   }
 
   /* 6. UPDATE: Show logic when expanded */
-  .team-section.is-expanded .team-member-card:nth-child(n + 4) {
+  .team-section.is-expanded .team-member-card:nth-child(n + 5) {
     display: block; 
     animation: fadeIn 0.5s ease-in-out; 
   }
