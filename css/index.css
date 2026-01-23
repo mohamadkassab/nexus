@@ -354,6 +354,12 @@ ul.brand-bullets li::before {
   padding: 40px 0;
 }
 
+@media(max-width: 1400px){
+  .expertise {
+    padding: 20px 0px;
+  }
+}
+
 @media(max-width: 800px){
   .expertise {
     padding: 1px 0px;
@@ -1311,7 +1317,7 @@ END CEO SECTION
     
     /* Reset the top padding from desktop view */
     padding-top: 0;
-    padding: 0px 10px;
+    padding: 20px 10px;
     
     /* Center the text inside */
     text-align: center;
@@ -1339,8 +1345,11 @@ END CEO SECTION
 }
 
 @media(max-width: 800px){
-    .about-title{
+  .about-title{
     padding-top: 30px;
+  }
+  .about-content-2 {
+    padding: 0px 10px;
   }
 }
 
