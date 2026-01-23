@@ -80,6 +80,7 @@ header {
 .wrap {
   margin: 0 auto;
   padding: 0 20px;
+  text-align: center;
 }
 /* 
 .brandbar {
@@ -211,8 +212,7 @@ header {
 }
 
 .lede {
-  max-width: 980px;
-  margin: 0 auto;
+  /* max-width: 980px; */
   font-weight: 300;
   color: #eaeaea;
   margin-top: 15px;
@@ -354,6 +354,12 @@ ul.brand-bullets li::before {
   padding: 40px 0;
 }
 
+@media(max-width: 800px){
+  .expertise {
+    padding: 1px 0px;
+  }
+}
+
 .expertise .wrap {
   max-width: var(--content-max);
   margin: 0 auto;
@@ -367,12 +373,7 @@ ul.brand-bullets li::before {
   color: var(--white) !important; /* Override general h2 color */
 }
 
-.expertise p {
-  margin: 0;
-  font-size: 18px;
-  line-height: 1.6;
-  color: #e9e9ea !important; /* Override general p color */
-}
+
 
 /* ------------------- */
 /* Team Section */
@@ -394,7 +395,7 @@ ul.brand-bullets li::before {
   font-weight: 450;
 }
 
-.team-section p {
+/* .team-section p {
   margin: 0;
   font-size: 16px;
   line-height: 1.6;
@@ -406,7 +407,7 @@ ul.brand-bullets li::before {
     font-size: 14px;
     line-height: 1.6;
   }
-}
+} */
 
 /* ------------------- */
 /* Contact Section */
@@ -915,6 +916,7 @@ hr,
 
 .about-title{
   text-align: left;
+  color: #fff;
 }
 
 @media(max-width: 767px)
