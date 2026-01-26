@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
 const teamData = [
   {
     name: "Hassan Anouti",
-    role: "Managing Partner <br> CEO",
+    role: "Group CEO",
     image: "src/teams/hassan.webp",
     bio: `
 With a Master’s in Marketing from Paris-Sorbonne and a BBA from a Swiss hotel management school, Hassan brings over 20 years of experience across hotel operations and kitchen manufacturing, bridging operational hospitality insight with industrial execution.    <div class="bio-divider"> </div>
@@ -73,7 +73,7 @@ He is known for his ability to turn complex ideas into operationally strong conc
   },
     {
     name: "Dario Wolfsen",
-    role: "Managing Partner <br> CGO",
+    role: "Group CGO",
     image: "src/teams/dario.webp",
     bio: `
 Known for his unique operations led approach, backed by 250 restaurant openings, Dario supports operators with practical solutions, aligning strategy, people and processes to unlock sustainable growth.    
