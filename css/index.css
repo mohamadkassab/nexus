@@ -1376,6 +1376,25 @@ END CEO SECTION
     height: 1000px;
   }
 }
+
+@media (min-width: 1500px) {
+  #gallery-carousel-2 .slick-slide {
+      height: 100% !important; 
+  }
+}
+  @media (max-width: 800px) {
+     #gallery-carousel-2 .slider-title {
+        min-height: 140px !important; 
+    }
+  }
+  @media (max-width: 800px) {
+     #gallery-carousel-2 .slider-paragraph {
+        min-height: 100% !important; 
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+}
 /* 
 -------------------------
 END
