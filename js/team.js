@@ -71,19 +71,6 @@ With a Master’s in Marketing from Paris-Sorbonne and a BBA from a Swiss hotel 
 He is known for his ability to turn complex ideas into operationally strong concepts that scale, bringing an analytical and results-driven mindset to every project.    </p>
     ` 
   },
-
-  {
-    name: "Girish Rao",
-    role: "Managing Partner <br> IMEA",
-    image: "src/teams/girish.webp",
-    bio: `With over 25 years of experience in HVAC and commercial kitchen ventilation, Girish leads the 
-    delivery of innovative, sustainable, and high-performance solutions across the IMEA region. 
-    <div class="bio-divider"> </div>
-    <p>
-      He oversees complex projects for hotels, restaurants, cloud kitchens, and industrial food facilities, 
-      combining technical depth with strategic leadership.
-    </p>`  
-  },
   {
     name: "Miran Štirn",
     role: "Managing Partner <br> Europe",
@@ -98,6 +85,19 @@ He is known for his ability to turn complex ideas into operationally strong conc
       grilling and front-of-house cooking concepts.
     </p>`  
   },
+  {
+    name: "Girish Rao",
+    role: "Managing Partner <br> IMEA",
+    image: "src/teams/girish.webp",
+    bio: `With over 25 years of experience in HVAC and commercial kitchen ventilation, Girish leads the 
+    delivery of innovative, sustainable, and high-performance solutions across the IMEA region. 
+    <div class="bio-divider"> </div>
+    <p>
+      He oversees complex projects for hotels, restaurants, cloud kitchens, and industrial food facilities, 
+      combining technical depth with strategic leadership.
+    </p>`  
+  },
+
       {
     name: "Dario Wolfsen",
     role: "Group CGO",
