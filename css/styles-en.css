@@ -19345,7 +19345,7 @@ h2 a.title-font-size-extra-large {
 }
 
 .area-text-image-full .text-wrapper p {
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 @media (max-width: 767px) {
