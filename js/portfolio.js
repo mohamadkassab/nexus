@@ -84,20 +84,6 @@ const portfolioItems = [
         image: "src/portfolio/darc 3.webp"
     },
     {
-        id: "copa-25h-hotel",
-        title: "Copa, 25H Hotel",
-        location: "Jakarta, Indonesia",
-        brand: "KOOK",
-        image: "src/portfolio/kook 3.webp"
-    },
-    {
-        id: "timeless",
-        title: "Timeless",
-        location: "Dubai, United Arab Emirates",
-        brand: "NORTH",
-        image: "src/portfolio/north 3.webp"
-    },
-    {
         id: "w-hotel",
         title: "W Hotel",
         location: "Maldives",
@@ -117,20 +103,6 @@ const portfolioItems = [
         location: "Duxton, Singapore",
         brand: "KOOK",
         image: "src/portfolio/kook 4.webp"
-    },
-    {
-        id: "sofitel-hotel",
-        title: "Sofitel Hotel & Convention Centre",
-        location: "Riyadh, Saudi Arabia",
-        brand: "DARC",
-        image: "src/portfolio/darc 4.webp"
-    },
-    {
-        id: "courtyard-marriott",
-        title: "Courtyard by Marriott",
-        location: "Colva, Goa, India",
-        brand: "NORTH",
-        image: "src/portfolio/north 2.webp"
     },
     {
         id: "marriott-hotel",
@@ -161,18 +133,67 @@ const portfolioItems = [
         image: "src/portfolio/avante 3.webp"
     },
     {
-        id: "the-cave",
-        title: "The Cave",
-        location: "Nanjing, China",
-        brand: "KOPA",
-        image: "src/portfolio/kopa 4.webp"
-    },
-    {
         id: "trident-hotel",
         title: "Trident Hotel",
         location: "Mumbai India",
         brand: "AVANTE",
         image: "src/portfolio/avante 5.webp"
+    },
+    {
+        id: "amadeo-by-oberoi",
+        title: "Amadeo By Oberoi",
+        location: "Mumbai, India",
+        brand: "DARC&nbsp;&nbsp;|&nbsp;&nbsp;NORTH",
+        image: "src/portfolio/darc and north new 1.webp"
+    },
+    {
+        id: "ciel-bleu-restaurant",
+        title: "Ciel Bleu Restaurant",
+        location: "Amsterdam, Netherlands",
+        brand: "KOPA",
+        image: "src/portfolio/kopa new 1.webp"
+    },
+    {
+        id: "gaggan-anand-restaurant",
+        title: "Gaggan Anand Restaurant",
+        location: "Bangkok, Thailand",
+        brand: "KOPA",
+        image: "src/portfolio/kopa new 2.webp"
+    },
+    {
+        id: "autograph-collection-by-marriott",
+        title: "Autograph Collection by Marriott",
+        location: "Nanjing, China",
+        brand: "KOOK",
+        image: "src/portfolio/kook new 1.webp"
+    },
+    {
+        id: "hilton-the-hague",
+        title: "Hilton The Hague",
+        location: "Den Haag, Netherlands",
+        brand: "KOOK",
+        image: "src/portfolio/kook new 2.webp"
+    },
+    {
+        id: "sheraton-cebu-mactan-resort",
+        title: "Sheraton Cebu Mactan Resort",
+        location: "Cebu, Philippines",
+        brand: "KOPA",
+        image: "src/portfolio/kopa new 3.webp"
+    },
+    {
+        id: "radisson-collection-hotel",
+        title: "Radisson Collection Hotel",
+        location: "Brussels, Belgium",
+        brand: "KOOK",
+        image: "src/portfolio/kook new 3.webp"
+    },
+    {
+        id: "regent-hotel",
+        title: "Regent Hotel",
+        location: "Taipei, Taiwan",
+        brand: "KOOK",
+        image: "src/portfolio/kook new 4.webp"
     }
 ];
 
@@ -194,7 +215,7 @@ function renderPortfolio() {
                       <h2 class="slider-title">
                         ${item.title}
                       </h2>
-                      <div class="collaboration-paragraph">
+                      <div class="portfolio-paragraph">
                         <p class="slider-paragraph">
                           ${item.location}
                         </p>

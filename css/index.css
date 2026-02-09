@@ -1132,7 +1132,7 @@ CEO SECTION
   width: 100%;
   height: 800px;
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: center;
   padding: 80px 20px; /* Top/Bottom padding ensures text doesn't hit edges */
   overflow: hidden;
@@ -1362,7 +1362,7 @@ END CEO SECTION
     }
 
     .slider-title{
-      min-height: 12rem;
+      min-height: 6rem;
     }
   }
 
@@ -1415,3 +1415,12 @@ END
   }
 }
 
+.collaboration-paragraph {
+  height: 200px;
+}
+
+@media(min-width:800px){
+  .collaboration-paragraph {
+    height: 150px;
+  }
+}
