@@ -31,7 +31,7 @@ const portfolioItems = [
         id: "lola-brasserie",
         title: "Lola Brasserie",
         location: "Jeddah, Saudi Arabia",
-        brand: "AVANTE | KOPA",
+        brand: "AVANTE&nbsp;&nbsp;|&nbsp;&nbsp;KOPA",
         image: "src/portfolio/kopa 1.webp"
     },
     {
@@ -59,7 +59,7 @@ const portfolioItems = [
         id: "signor-sassi",
         title: "Signor Sassi",
         location: "Dubai, United Arab Emirates",
-        brand: "DARC | NORTH",
+        brand: "DARC&nbsp;&nbsp;|&nbsp;&nbsp;NORTH",
         image: "src/portfolio/north.webp"
     },
     {
@@ -108,7 +108,7 @@ const portfolioItems = [
         id: "baoli",
         title: "Bâoli",
         location: "Dubai, United Arab Emirates",
-        brand: "AVANTE | KOPA | NORTH",
+        brand: "AVANTE&nbsp;&nbsp;|&nbsp;&nbsp;KOPA&nbsp;&nbsp;|&nbsp;&nbsp;NORTH",
         image: "src/portfolio/kopa 6.webp"
     },
     {
