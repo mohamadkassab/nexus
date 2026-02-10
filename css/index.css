@@ -1130,11 +1130,11 @@ CEO SECTION
 .ceo-hero-section {
   position: relative;
   width: 100%;
-  height: 800px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 80px 20px; /* Top/Bottom padding ensures text doesn't hit edges */
+  /* padding: 80px 20px;  */
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -1144,7 +1144,8 @@ CEO SECTION
    inset: 0 is a modern shorthand for top:0; right:0; bottom:0; left:0;
 */
 .ceo-hero-bg {
-  position: absolute;
+  height: fit-content;
+  position: relative;
   inset: 0; 
   z-index: 0;
   background-color: var(--bg-dark);
@@ -1155,8 +1156,7 @@ CEO SECTION
 */
 .ceo-hero-bg img {
   width: 100%;
-  height: 100%;
-  object-fit: cover; 
+  object-fit: contain; 
   object-position: center; 
 }
 
@@ -1220,7 +1220,7 @@ CEO SECTION
 /* --- Mobile Responsiveness --- */
 @media (max-width: 768px) {
   .ceo-hero-section {
-    padding: 60px 20px;
+    /* padding: 60px 20px; */
     align-items: center;
     height: auto;
   }

@@ -1,5 +1,12 @@
 const portfolioItems = [
     {
+        id: "baoli",
+        title: "Bâoli",
+        location: "Dubai, United Arab Emirates",
+        brand: "AVANTE&nbsp;&nbsp;|&nbsp;&nbsp;KOPA&nbsp;&nbsp;|&nbsp;&nbsp;NORTH",
+        image: "src/portfolio/kopa 6.webp"
+    },
+    {
         id: "birch",
         title: "Birch",
         location: "Dubai, United Arab Emirates",
@@ -14,6 +21,27 @@ const portfolioItems = [
         image: "src/portfolio/kopa 2.webp"
     },
     {
+        id: "radisson-collection-hotel",
+        title: "Radisson Collection Hotel",
+        location: "Brussels, Belgium",
+        brand: "KOOK",
+        image: "src/portfolio/kook new 3.webp"
+    },
+    {
+        id: "gaggan-anand-restaurant",
+        title: "Gaggan Anand Restaurant",
+        location: "Bangkok, Thailand",
+        brand: "KOPA",
+        image: "src/portfolio/kopa new 2.webp"
+    },
+    {
+        id: "ciel-bleu-restaurant",
+        title: "Ciel Bleu Restaurant",
+        location: "Amsterdam, Netherlands",
+        brand: "KOPA",
+        image: "src/portfolio/kopa new 1.webp"
+    },
+    {
         id: "gloria-osteria",
         title: "Gloria Osteria",
         location: "Dubai, United Arab Emirates",
@@ -21,11 +49,32 @@ const portfolioItems = [
         image: "src/portfolio/avante 2.webp"
     },
     {
-        id: "mandarin-oriental-hotel",
-        title: "Mandarin Oriental Hotel",
-        location: "Abu Dhabi, United Arab Emirates",
+        id: "regent-hotel",
+        title: "Regent Hotel",
+        location: "Taipei, Taiwan",
         brand: "KOOK",
-        image: "src/portfolio/kook 1.webp"
+        image: "src/portfolio/kook new 4.webp"
+    },
+    {
+        id: "frantzen",
+        title: "Frantzén",
+        location: "Stockholm, Sweden",
+        brand: "KOPA&nbsp;&nbsp;|&nbsp;&nbsp;KOOK",
+        image: "src/portfolio/kopa 3.webp"
+    },
+    {
+        id: "amadeo-by-oberoi",
+        title: "Amadeo By Oberoi",
+        location: "Mumbai, India",
+        brand: "DARC&nbsp;&nbsp;|&nbsp;&nbsp;NORTH",
+        image: "src/portfolio/darc and north new 1.webp"
+    },
+    {
+        id: "sheraton-cebu-mactan-resort",
+        title: "Sheraton Cebu Mactan Resort",
+        location: "Cebu, Philippines",
+        brand: "KOPA",
+        image: "src/portfolio/kopa new 3.webp"
     },
     {
         id: "lola-brasserie",
@@ -34,19 +83,19 @@ const portfolioItems = [
         brand: "AVANTE&nbsp;&nbsp;|&nbsp;&nbsp;KOPA",
         image: "src/portfolio/kopa 1.webp"
     },
-    {
-        id: "the-meat-co",
-        title: "The Meat Co.",
-        location: "Zahra, Kuwait",
-        brand: "AVANTE",
-        image: "src/portfolio/avante 7.webp"
-    },
-    {
+        {
         id: "ganache-chocolatier",
         title: "Ganache Chocolatier",
         location: "Dubai, United Arab Emirates",
         brand: "DARC",
         image: "src/portfolio/darc 2.webp"
+    },
+    {
+        id: "w-hotel",
+        title: "W Hotel",
+        location: "Maldives",
+        brand: "AVANTE",
+        image: "src/portfolio/avante 4.webp"
     },
     {
         id: "time-out-market",
@@ -63,60 +112,11 @@ const portfolioItems = [
         image: "src/portfolio/north.webp"
     },
     {
-        id: "frantzen",
-        title: "Frantzén",
-        location: "Stockholm, Sweden",
-        brand: "KOPA",
-        image: "src/portfolio/kopa 3.webp"
-    },
-    {
-        id: "ristorante-loren",
-        title: "Ristorante Loren",
-        location: "Dubai, United Arab Emirates",
-        brand: "AVANTE",
-        image: "src/portfolio/avante 1.webp"
-    },
-    {
-        id: "amazonico",
-        title: "Amazonico",
-        location: "Dubai, United Arab Emirates",
-        brand: "DARC",
-        image: "src/portfolio/darc 3.webp"
-    },
-    {
-        id: "w-hotel",
-        title: "W Hotel",
-        location: "Maldives",
-        brand: "AVANTE",
-        image: "src/portfolio/avante 4.webp"
-    },
-    {
-        id: "baoli",
-        title: "Bâoli",
-        location: "Dubai, United Arab Emirates",
-        brand: "AVANTE&nbsp;&nbsp;|&nbsp;&nbsp;KOPA&nbsp;&nbsp;|&nbsp;&nbsp;NORTH",
-        image: "src/portfolio/kopa 6.webp"
-    },
-    {
-        id: "mondrian-hotel",
-        title: "Mondrian Hotel",
-        location: "Duxton, Singapore",
+        id: "hilton-the-hague",
+        title: "Hilton The Hague",
+        location: "Den Haag, Netherlands",
         brand: "KOOK",
-        image: "src/portfolio/kook 4.webp"
-    },
-    {
-        id: "marriott-hotel",
-        title: "Marriott Hotel",
-        location: "Daegu, South Korea",
-        brand: "KOPA",
-        image: "src/portfolio/kopa 5.webp"
-    },
-    {
-        id: "angelina-paris",
-        title: "Angelina Paris",
-        location: "Dubai, United Arab Emirates",
-        brand: "DARC",
-        image: "src/portfolio/darc 5.webp"
+        image: "src/portfolio/kook new 2.webp"
     },
     {
         id: "marina-bay-sands",
@@ -126,39 +126,11 @@ const portfolioItems = [
         image: "src/portfolio/kook 2.webp"
     },
     {
-        id: "berber",
-        title: "Berber",
+        id: "amazonico",
+        title: "Amazonico",
         location: "Dubai, United Arab Emirates",
-        brand: "AVANTE",
-        image: "src/portfolio/avante 3.webp"
-    },
-    {
-        id: "trident-hotel",
-        title: "Trident Hotel",
-        location: "Mumbai India",
-        brand: "AVANTE",
-        image: "src/portfolio/avante 5.webp"
-    },
-    {
-        id: "amadeo-by-oberoi",
-        title: "Amadeo By Oberoi",
-        location: "Mumbai, India",
-        brand: "DARC&nbsp;&nbsp;|&nbsp;&nbsp;NORTH",
-        image: "src/portfolio/darc and north new 1.webp"
-    },
-    {
-        id: "ciel-bleu-restaurant",
-        title: "Ciel Bleu Restaurant",
-        location: "Amsterdam, Netherlands",
-        brand: "KOPA",
-        image: "src/portfolio/kopa new 1.webp"
-    },
-    {
-        id: "gaggan-anand-restaurant",
-        title: "Gaggan Anand Restaurant",
-        location: "Bangkok, Thailand",
-        brand: "KOPA",
-        image: "src/portfolio/kopa new 2.webp"
+        brand: "DARC",
+        image: "src/portfolio/darc 3.webp"
     },
     {
         id: "autograph-collection-by-marriott",
@@ -168,32 +140,47 @@ const portfolioItems = [
         image: "src/portfolio/kook new 1.webp"
     },
     {
-        id: "hilton-the-hague",
-        title: "Hilton The Hague",
-        location: "Den Haag, Netherlands",
-        brand: "KOOK",
-        image: "src/portfolio/kook new 2.webp"
+        id: "angelina-paris",
+        title: "Angelina Paris",
+        location: "Dubai, United Arab Emirates",
+        brand: "DARC",
+        image: "src/portfolio/darc 5.webp"
     },
     {
-        id: "sheraton-cebu-mactan-resort",
-        title: "Sheraton Cebu Mactan Resort",
-        location: "Cebu, Philippines",
+        id: "mondrian-hotel",
+        title: "Mondrian Hotel",
+        location: "Duxton, Singapore",
+        brand: "KOOK",
+        image: "src/portfolio/kook 4.webp"
+    },
+    {
+        id: "ristorante-loren",
+        title: "Ristorante Loren",
+        location: "Dubai, United Arab Emirates",
+        brand: "AVANTE",
+        image: "src/portfolio/avante 1.webp"
+    },
+    {
+        id: "marriott-hotel",
+        title: "Marriott Hotel",
+        location: "Daegu, South Korea",
         brand: "KOPA",
-        image: "src/portfolio/kopa new 3.webp"
+        image: "src/portfolio/kopa 5.webp"
     },
     {
-        id: "radisson-collection-hotel",
-        title: "Radisson Collection Hotel",
-        location: "Brussels, Belgium",
-        brand: "KOOK",
-        image: "src/portfolio/kook new 3.webp"
+        id: "berber",
+        title: "Berber",
+        location: "Dubai, United Arab Emirates",
+        brand: "AVANTE",
+        image: "src/portfolio/avante 3.webp"
     },
+
     {
-        id: "regent-hotel",
-        title: "Regent Hotel",
-        location: "Taipei, Taiwan",
-        brand: "KOOK",
-        image: "src/portfolio/kook new 4.webp"
+        id: "trident-hotel",
+        title: "Trident Hotel",
+        location: "Mumbai India",
+        brand: "AVANTE",
+        image: "src/portfolio/avante 5.webp"
     }
 ];
 
