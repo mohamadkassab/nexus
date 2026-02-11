@@ -1,17 +1,24 @@
 const portfolioItems = [
     {
+        id: "signor-sassi",
+        title: "Signor Sassi",
+        location: "Dubai, United Arab Emirates",
+        brand: "DARC&nbsp;&nbsp;|&nbsp;&nbsp;NORTH",
+        image: "src/portfolio/north.webp"
+    },
+    {
+        id: "regent-hotel",
+        title: "Regent Hotel",
+        location: "Taipei, Taiwan",
+        brand: "KOOK",
+        image: "src/portfolio/kook new 4.webp"
+    },
+    {
         id: "baoli",
         title: "Bâoli",
         location: "Dubai, United Arab Emirates",
         brand: "AVANTE&nbsp;&nbsp;|&nbsp;&nbsp;KOPA&nbsp;&nbsp;|&nbsp;&nbsp;NORTH",
         image: "src/portfolio/kopa 6.webp"
-    },
-    {
-        id: "birch",
-        title: "Birch",
-        location: "Dubai, United Arab Emirates",
-        brand: "DARC",
-        image: "src/portfolio/darc 1.webp"
     },
     {
         id: "macau",
@@ -20,6 +27,14 @@ const portfolioItems = [
         brand: "KOPA",
         image: "src/portfolio/kopa 2.webp"
     },
+    {
+        id: "birch",
+        title: "Birch",
+        location: "Dubai, United Arab Emirates",
+        brand: "DARC",
+        image: "src/portfolio/darc 1.webp"
+    },
+
     {
         id: "radisson-collection-hotel",
         title: "Radisson Collection Hotel",
@@ -49,13 +64,6 @@ const portfolioItems = [
         image: "src/portfolio/avante 2.webp"
     },
     {
-        id: "regent-hotel",
-        title: "Regent Hotel",
-        location: "Taipei, Taiwan",
-        brand: "KOOK",
-        image: "src/portfolio/kook new 4.webp"
-    },
-    {
         id: "frantzen",
         title: "Frantzén",
         location: "Stockholm, Sweden",
@@ -83,7 +91,7 @@ const portfolioItems = [
         brand: "AVANTE&nbsp;&nbsp;|&nbsp;&nbsp;KOPA",
         image: "src/portfolio/kopa 1.webp"
     },
-        {
+    {
         id: "ganache-chocolatier",
         title: "Ganache Chocolatier",
         location: "Dubai, United Arab Emirates",
@@ -103,13 +111,6 @@ const portfolioItems = [
         location: "Manama, Bahrain",
         brand: "AVANTE",
         image: "src/portfolio/avante 6.webp"
-    },
-    {
-        id: "signor-sassi",
-        title: "Signor Sassi",
-        location: "Dubai, United Arab Emirates",
-        brand: "DARC&nbsp;&nbsp;|&nbsp;&nbsp;NORTH",
-        image: "src/portfolio/north.webp"
     },
     {
         id: "hilton-the-hague",
