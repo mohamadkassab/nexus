@@ -441,9 +441,11 @@
                       </h2>
                       <div class="collaboration-paragraph">
                         <p class="slider-paragraph">
-                        We plan and invest for the long term by building production closer to the markets we serve. 
-                        Local factories support our customers in close proximity to their operations, reduce transport, 
-                        strengthen supply-chain resilience, and enable the development of skilled teams rooted in the regions where we operate.
+                          We plan and invest for the long term by building production closer to the markets we serve.
+                          Local factories support our customers in close proximity to their operations, reduce
+                          transport,
+                          strengthen supply-chain resilience, and enable the development of skilled teams rooted in the
+                          regions where we operate.
                         </p>
                       </div>
                     </div>
@@ -927,9 +929,8 @@
 </script>
 
 <script>
-  //<!--
   $(document).ready(function ($) {
-    $('#gallery-carousel-69161a290386d, #gallery-carousel-2').slick({
+    $('#gallery-carousel-69161a290386d').slick({
       dots: true,
       autoplay: true,
       autoplaySpeed: 6000,
@@ -937,7 +938,35 @@
       pauseOnFocus: false,
     });
   });
-  //-->
+</script>
+
+<script>
+  $(document).ready(function ($) {
+    const $carousel = $('#gallery-carousel-2');
+
+    $carousel.slick({
+      dots: true,
+      autoplay: false,
+      autoplaySpeed: 3000,
+      pauseOnHover: false,
+      pauseOnFocus: false,
+    });
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            $carousel.slick('slickPlay');
+          } else {
+            $carousel.slick('slickPause');
+          }
+        });
+      });
+      observer.observe($carousel[0]);
+    } else {
+      $carousel.slick('slickPlay');
+    }
+  });
 </script>
 
 
