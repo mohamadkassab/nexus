@@ -1159,15 +1159,17 @@ CEO SECTION
   object-position: center; 
 }
 
-@media(min-width:1440px){
-  .ceo-hero-bg img {
-    height: 718px;
-  }
-}
+
 
 @media(min-width:819px){
   .ceo-hero-bg img {
     height: 383px;
+  }
+}
+
+@media(min-width:1440px){
+  .ceo-hero-bg img {
+    height: 718px;
   }
 }
 
