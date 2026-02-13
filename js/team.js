@@ -66,9 +66,10 @@ const teamData = [
     role: "CEO",
     image: "src/teams/hassan.webp",
     bio: `
-With extensive experience across hotel operations and kitchen manufacturing, Hassan bridges deep operational insight with industrial execution. He is recognized for transforming complex ideas into scalable, operationally robust concepts, bringing an analytical and results-driven mindset to every project. <div class="bio-divider"> </div>
+With a career spanning hospitality operations and kitchen manufacturing, Hassan brings a rare blend of operational rigor and industrial leadership.
+Known for shaping complex initiatives into scalable concepts, he is trusted to turn strategy into measurable, real-world results. <div class="bio-divider"> </div>
     <p>
-Holding a Master’s degree in Marketing from Paris-Sorbonne and a BBA from a Swiss hotel management school, he grounds his leadership in both strategic vision and hands-on industry expertise. </p>
+He holds a Master’s in Marketing from Paris-Sorbonne and a BBA in Business, reflecting a leadership style defined by strategic clarity and disciplined execution.</p>
     ` 
   },
   {

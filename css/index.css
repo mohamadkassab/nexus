@@ -1156,9 +1156,21 @@ CEO SECTION
 */
 .ceo-hero-bg img {
   width: 100%;
-  object-fit: contain; 
   object-position: center; 
 }
+
+@media(min-width:1440px){
+  .ceo-hero-bg img {
+    height: 718px;
+  }
+}
+
+@media(min-width:819px){
+  .ceo-hero-bg img {
+    height: 383px;
+  }
+}
+
 
 .ceo-hero-overlay {
   position: absolute;
